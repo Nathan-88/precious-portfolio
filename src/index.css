@@ -4,7 +4,7 @@
 
 
 html{
-    scroll-snap-type:y mandatory;
+    /* scroll-snap-type:y mandatory; */
     scroll-behavior: smooth;
 }
 
@@ -14,12 +14,32 @@ html{
   box-sizing: border-box;
 }
 
-section{
-  height: 100vh;
-  scroll-snap-align: center;
+body{
+  font-family: "Helvetica Neue", Helvetica,system-ui, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
+section{
+  height: 100vh;
+  /* scroll-snap-align: center; */
+}
 
+.line{
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 1px solid #000; 
+   line-height: 0.1em;
+   margin: 10px 0 20px;
+}
+
+.gif {
+            color: black;
+            text-shadow: -1px 1px 0 #fff,
+                1px 1px 0 #fff,
+                1px -1px 0 #fff,
+                -1px -1px 0 #fff;
+    }
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
