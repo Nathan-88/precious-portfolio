@@ -1,0 +1,7 @@
+.list-item {
+            list-style: none;
+            transition: list-style 0.5s ease-in-out;
+        }
+.list-item:hover {
+    list-style: disc inside;
+}

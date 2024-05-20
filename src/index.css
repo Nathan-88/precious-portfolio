@@ -21,7 +21,7 @@ body{
 }
 
 section{
-  height: 100vh;
+  /* height: 100vh; */
   /* scroll-snap-align: center; */
 }
 
@@ -34,12 +34,15 @@ section{
 }
 
 .gif {
-            color: black;
-            text-shadow: -1px 1px 0 #fff,
-                1px 1px 0 #fff,
-                1px -1px 0 #fff,
-                -1px -1px 0 #fff;
+    color: black;
+    opacity: 0.4;
+
+    text-shadow: -1px 1px 0 #fff,
+        1px 1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px -1px 0 #fff;
     }
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
