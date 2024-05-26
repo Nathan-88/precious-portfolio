@@ -30,7 +30,7 @@ const Header = ({ color, backgroundColor, barColor }) => {
     }, []);
 
     const getBackgroundColor = () => {
-        if (backgroundColor === 'white') {
+        if (backgroundColor === 'white' || backgroundColor === '#000') {
             return backgroundColor;
         }
         return isScrolled ? backgroundColor : 'transparent';

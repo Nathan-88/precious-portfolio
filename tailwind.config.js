@@ -9,8 +9,12 @@ export default {
       colors: {
         primary: "#6C5CCC",
         marino: "#4054B2",
+        listcol: "#296DB3",
         secondary: "#54595F",
         sidebar : "#525252",
+        text: "#7A7A7A",
+        accent: "#61CE70",
+        eucalyptus: "#23A455",
         tertiary: "#F1F1F1",
         card: "#F9F9F9"
       },
