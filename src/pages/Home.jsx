@@ -1,7 +1,17 @@
 
+import LogoCarousel from "../components/LogoCarousel"
+import AboutMe from "../components/AboutMe"
+import Mywork from "../components/Mywork"
+import Myservice from "../components/Myservice"
+import Parallex from "../components/Parallex"
+import Books from "../components/Books"
+
+
 const Home = () => {
+
     return(<>
-        <section className="h-screen relative bg-center text-white bg-fixed bg-no-repeat bg-cover bg-parallex overflow-hidden">
+        <section
+        className="h-screen relative bg-center text-white bg-fixed bg-no-repeat bg-cover bg-parallex overflow-hidden">
             <div className=" absolute top-[58%] md:top-[63%] 2xl:top-[50%] text-white w-full left-[45%] md:left-[50%] 2xl:left-[55%] -translate-y-[50%] -translate-x-[40%] ">
                 {/* container for text and image */}
                 <div className="md:pt-20 lg:pt-20 h-full relative flex flex-col min-[1027px]:flex-row xl:flex-row 2xl:flex-row">
@@ -21,15 +31,22 @@ const Home = () => {
                     <div className="pt-20 xl:pt-0 2xl:pt-5 2xl:w-[50%] 3xl:w-[55%]">
                         <img className="w-full h-auto object-cover" src="/src/assets/myPic.png" alt="my pic" />
                     </div>
-                </div>
-                
-                
+                </div>   
             </div>
         </section>
-
-        <section className="bg-purple-400 h-screen">
+        <LogoCarousel/>
+        <AboutMe/>
+        <Mywork/>
+        <Myservice/>
+        <Parallex/>
+        <Books/>
+        <section className="py-10 px-20 bg-violet-100">
+            <div className="w-[30%]">
+                <p className="text-primary text-lg">PORTRAIT EDITION</p>
+                <p className="font-bold text-3xl">Moments</p>
+                <p className="font-bold text-3xl">printed on films</p>
+            </div>
         </section>
-        <section className="bg-blue-400 h-screen"></section>
         </>
     )
 }

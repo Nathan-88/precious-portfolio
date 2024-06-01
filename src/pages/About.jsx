@@ -1,6 +1,11 @@
+import { motion } from "framer-motion";
 const About = ()=> {
     return (
-        <section className="flex flex-col md:flex-row px-6 gap-x-28 pt-28 xl:px-28">
+        <motion.section 
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.4 }}
+        className="flex flex-col md:flex-row px-6 gap-x-28 pt-28 xl:px-28">
             <div className="">
                 <p className="text-secondary p-2 mb-3">
                     My background in UX Design goes as far back as my days working as a social media manager in the SaaS industry, implementing research to profile our users and leveraging graphic design to communicate effectively. This contributed hugely to my career path as a UX designer. In the past year, I spent my time working on a digital procurement solution for emerging businesses to manage their procurement spend efficiently. Presently at Boehringer Ingelheim, I work with diverse product teams at the new digital health innovation lab
@@ -39,7 +44,7 @@ const About = ()=> {
                 <p className="text-black">Ideation</p>
                 </div>
             </div>
-        </section>
+        </motion.section>
     )
 };
 export default About;

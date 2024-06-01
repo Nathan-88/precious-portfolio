@@ -43,27 +43,32 @@ section{
         -1px -1px 0 #fff;
     }
 
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
-
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@keyframes slide {
+  0% {
+    transform: translateX(0);
   }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
-  
-  } */
+.logo-slide {
+  animation: 5s slide infinite linear;
+  display: inline-block;
+}
+
+.logo-slide li{
+  display: inline-block;
+  margin: 0 50px;
+  position: relative;
+  padding: 1em;
+}
+/* create a bullet manually */
+.logo-slide li::before {
+  content: ".";
+  position: absolute;
+  left: 0;
+  top: 10%;
+  font-size: 50px;
+}
+

@@ -20,8 +20,8 @@ export default {
       },
       backgroundImage: {
         parallex: "linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url('./src/assets/backImg.jpg')",
-
-      }
+        darkimg: "linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),url('./src/assets/darkImg.jpg')",
+      },
     },
 
     screens: {

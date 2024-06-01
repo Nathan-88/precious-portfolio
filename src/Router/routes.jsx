@@ -5,11 +5,14 @@ import AboutLayout from "../layouts/AboutLayout";
 import About from "../pages/About"
 import ProcurementLayout from "../layouts/ProcurementLayout";
 import Procurement from "../pages/Procurement";
+import WhiteCollarLayout from "../layouts/WhiteCollarLayout";
+import WhiteCollar from "../pages/WhiteCollar";
 
 const Router = () =>{
     const router = createBrowserRouter(
         createRoutesFromElements(
             <>
+            
             <Route path="/" element={<MainLayout/>}>
                 <Route index element={<Home/>} />
             </Route>
@@ -17,7 +20,10 @@ const Router = () =>{
                 <Route index element={<About/>}/>
             </Route>
             <Route path="projects" element={<ProcurementLayout/>}>
-                <Route index element={<Procurement/>}/>
+                <Route index path="procurement" element={<Procurement/>}/>
+            </Route>
+            <Route path="projects" element={<WhiteCollarLayout/>}>
+                <Route path="WhiteCollar" element={<WhiteCollar/>}/>
             </Route>
             </>
         )

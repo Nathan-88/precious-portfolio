@@ -30,7 +30,7 @@ const Header = ({ color, backgroundColor, barColor }) => {
     }, []);
 
     const getBackgroundColor = () => {
-        if (backgroundColor === 'white' || backgroundColor === '#000') {
+        if (backgroundColor !== 'black') {
             return backgroundColor;
         }
         return isScrolled ? backgroundColor : 'transparent';
@@ -98,7 +98,7 @@ const Header = ({ color, backgroundColor, barColor }) => {
                             <ul className="space-y-10 text-6xl">
                                 <li className="list-item"><Link to="/" className="-ml-10">Home</Link></li>
                                 <li className="list-item"><Link to="#work" className="-ml-10">Work</Link></li>
-                                <li className="list-item"><Link to="about" className="-ml-10">Contact</Link></li>
+                                <li className="list-item"><Link to="/about" className="-ml-10">Contact</Link></li>
                             </ul>
                         </div>
                     </motion.div>
