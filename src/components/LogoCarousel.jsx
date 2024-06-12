@@ -1,6 +1,6 @@
 const LogoCarousel = () => {
     return(
-        <div className="overflow-hidden whitespace-nowrap bg-text">
+        <div className="overflow-hidden whitespace-nowrap bg-tertiary">
             <ul className="text-xl  logo-slide  md:py-1">
                 <li>op</li>
                 <li>Figma</li>

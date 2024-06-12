@@ -16,11 +16,17 @@ export default {
         accent: "#61CE70",
         eucalyptus: "#23A455",
         tertiary: "#F1F1F1",
+        whitecard: "#F5F5F5",
+        hueblack: "#454545",
         card: "#F9F9F9"
       },
-      backgroundImage: {
-        parallex: "linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url('./src/assets/backImg.jpg')",
-        darkimg: "linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),url('./src/assets/darkImg.jpg')",
+      // backgroundImage: {
+      //   parallex: "linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url('./src/assets/backImg.jpg')",
+      //   darkimg: "linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),url('./src/assets/darkImg.jpg')",
+      // },
+      fontFamily: {
+        'work-sans': ['"Work Sans"', 'sans-serif'],
+        'Helvetica-Neue': ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif']
       },
     },
 

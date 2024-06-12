@@ -6,7 +6,7 @@ const UserGroup = () => {
         <section id="User" className="bg-white px-8 py-12 md:px-10 xl:px-16 md:py-20 h-auto">
             <h2 className="text-5xl font-bold mb-10">User Groups</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="p-8 md:p-12 space-y-4 bg-violet-100 rounded-lg md:col-span-1 md:row-span-2">
+                <div className="p-8 md:p-12 space-y-4 bg-tertiary rounded-lg md:col-span-1 md:row-span-2">
                     <h3 className="text-3xl font-bold">Requester</h3>
                     <p className="text-md">GOAL</p>
                     <p className="text-secondary">I want to get an item/ service to meet a need.</p>
@@ -38,7 +38,7 @@ const UserGroup = () => {
                 </div>
 
                 {/* div 2 */}
-                <div className="p-8 md:p-12 space-y-4 bg-violet-100 rounded-lg md:col-span-1 md:row-span-1">
+                <div className="p-8 md:p-12 space-y-4 bg-tertiary rounded-lg md:col-span-1 md:row-span-1">
                     <h3 className="text-3xl font-bold">Approver</h3>
                     <p className="text-md">GOAL</p>
                     <p className="text-secondary">I  want to confirm details of requests and approve or reject</p>
@@ -66,7 +66,7 @@ const UserGroup = () => {
                     </ul>
                 </div>
                 {/* div 3 */}
-                <div className="p-8 md:p-12 space-y-4 bg-violet-100 rounded-lg md:col-span-1 md:row-span-2">
+                <div className="p-8 md:p-12 space-y-4 bg-tertiary rounded-lg md:col-span-1 md:row-span-2">
                     <h3 className="text-3xl font-bold">Procurement Officer</h3>
                     <p className="">GOAL</p>
                     <p className="text-secondary">I want to complete the purchases of required items/services and manage Vendor relationships</p>
@@ -101,7 +101,7 @@ const UserGroup = () => {
                     </ul>
                 </div>
                 {/* div 4 */}
-                <div className="p-8 md:p-12 space-y-4 bg-violet-100 rounded-lg md:col-span-1 md:row-span-1">
+                <div className="p-8 md:p-12 space-y-4 bg-tertiary rounded-lg md:col-span-1 md:row-span-1">
                     <h3 className="text-3xl font-medium">Senior management</h3>
                     <p className="">Goal</p>
                     <p className="text-secondary">I want to monitor the efficiency and productivity/approve high level requests</p>
@@ -129,7 +129,7 @@ const UserGroup = () => {
                     </ul>
                 </div>
                 {/* div 5 */}
-                <div className="p-8 md:p-12 space-y-4 md:space-y-0 gap-4 grid grid-cols-1 md:grid-cols-2 bg-violet-100 rounded-lg md:col-span-2 md:row-span-1">
+                <div className="p-8 md:p-12 space-y-4 md:space-y-0 gap-4 grid grid-cols-1 md:grid-cols-2 bg-tertiary rounded-lg md:col-span-2 md:row-span-1">
                     <div className="space-y-3 md:space-y-4">
                         <h3 className="text-3xl font-bold">Vendor</h3>
                         <p className="">GOAL</p>

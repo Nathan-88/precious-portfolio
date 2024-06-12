@@ -48,7 +48,7 @@ const Header = ({ color, backgroundColor, barColor }) => {
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.7 }}
-                        className="text-center my-auto"
+                        className="text-center font-[Poppins] font-semibold my-auto"
                     >
                         Precious
                     </motion.p>

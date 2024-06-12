@@ -3,6 +3,9 @@ import Role from "../components/Role"
 import UniqueSelling from "../components/UniqueSelling"
 import UserGroup from "../components/UserGroup"
 import JumpTo from "../components/JumpTo"
+import HighFidelity from "../components/HighFidelity"
+import Requisition from "../components/Requisition"
+import Takeaw from "../components/Takeaw"
 
 const Procurement = () => {
 
@@ -31,6 +34,9 @@ const Procurement = () => {
 
             {/* UserGroup */}
             <UserGroup/>
+            <HighFidelity/>
+            <Requisition/>
+            <Takeaw/>
         </section>
     );
 }

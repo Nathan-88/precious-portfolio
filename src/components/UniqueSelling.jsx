@@ -1,7 +1,7 @@
 import Research from '../assets/Research 2.png'
 const UniqueSelling = () => {
     return(
-        <section id="Unique" className="bg-violet-100 px-8 py-12 md:px-16 xl:px-24 md:py-20 h-auto">
+        <section id="Unique" className="bg-tertiary px-8 py-12 md:px-16 xl:px-24 md:py-20 h-auto">
             <div className="flex flex-col xl:flex-row xl:justify-between">
                 <div className="mb-10 xl:my-auto font-bold xl:w-[30%]">
                     <h2 className=" text-5xl xl:text-7xl text-secondary">Unique Selling <span className="text-black">Proposition</span></h2>

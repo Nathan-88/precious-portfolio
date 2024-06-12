@@ -1,0 +1,9 @@
+
+.image-slider .slick-prev:before,
+.image-slider .slick-next:before {
+  color: black;
+}
+
+.center-image {
+  width: 80%; /* Adjust the width of the centered image */
+}

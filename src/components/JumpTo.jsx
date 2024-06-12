@@ -9,19 +9,19 @@ const Items = [
 ]
 const JumpTo = () => {
     return(
-        <section className="bg-violet-100 px-8 py-12 md:px-16 md:py-20 h-auto">
+        <section className="bg-tertiary px-8 py-12 md:px-16 md:py-20 h-auto">
             <div className="space-y-3">
-                <h2 className="text-5xl font-bold">Jump To</h2>
-                <div className="flex flex-wrap space-y-2 space-x-2">
+                <h2 id="Overview" className="text-5xl font-bold">Jump To</h2>
+                <div className="flex flex-wrap space-x-2">
                     {Items.map((item, index) => (
-                    <div key={index} className="border border-current p-2 rounded-full">
+                    <div key={index} className="border border-current py-2 px-4 mb-2 rounded-full">
                         <a href={item.link} className="">{item.name}</a>
                     </div>))}
                 </div>
                 <hr className=" border-current"/>
             </div>
 
-            <section id="Overview" className="pt-10">
+            <section className="pt-10">
                 <h2 className="text-5xl font-bold mb-10">Project Overview</h2>
                 <div className="flex gap-4 flex-col xl:flex-row justify-center items-center">
                     <div className="p-2 space-y-4 xl:w-1/2">
@@ -42,7 +42,7 @@ const JumpTo = () => {
                         <img src={MacBook} alt="Macbook" className=""/>
                     </div>
                 </div>
-                <div className=" bg-primary p-2 mt-8 px-4  xl:w-fit rounded-full text-center">
+                <div className=" bg-primary py-3 mt-8 px-4  xl:w-fit rounded-full text-center">
                     <Link to="https://SeamlessHR.com" className="text-white">Go to SeamlessHR.com</Link>
                 </div>
             </section>
