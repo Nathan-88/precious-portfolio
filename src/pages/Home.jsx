@@ -6,7 +6,7 @@ import Myservice from "../components/Myservice"
 import Parallex from "../components/Parallex"
 import Books from "../components/Books"
 import Portrait from "../components/Portrait"
-// import Slides from "../components/Slides"
+import myPic from "/src/assets/myPic.png"
 import ImageSlider from "../components/ImageSlider/ImageSlider"
 
 
@@ -32,7 +32,7 @@ const Home = () => {
                     </div>
                     {/* image */}
                     <div className="pt-20 xl:pt-0 2xl:pt-5 2xl:w-[50%] 3xl:w-[55%]">
-                        <img className="w-full h-auto object-cover" src="/src/assets/myPic.png" alt="my pic" />
+                        <img className="w-full h-auto object-cover" src={myPic} alt="my pic" />
                     </div>
                 </div>   
             </div>
