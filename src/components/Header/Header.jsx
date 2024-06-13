@@ -39,7 +39,7 @@ const Header = ({ color, backgroundColor, barColor }) => {
     return (
         <>
             <section 
-                className={`text-[calc(10px+1vw)] z-10 m-0 h-[80px] fixed flex w-full justify-between px-10 py-1 font-medium transition-colors duration-300`}
+                className={`text-[calc(10px+1vw)] z-10 m-0 h-[80px] fixed flex w-full justify-between px-8 md:px-10 py-1 font-medium transition-colors duration-300`}
                 style={{ color, backgroundColor: getBackgroundColor() }}
             >
                 <Link className="flex" to="/">
