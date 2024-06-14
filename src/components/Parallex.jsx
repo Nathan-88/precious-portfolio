@@ -12,7 +12,7 @@ const Parallex = () => {
                         <div className="pr-8">
                             <img src={one} className="" alt="one"/>
                         </div>
-                        <div className="space-y-3 w-[75%]">
+                        <div className="space-y-3 xl:w-[75%]">
                             <p className="font-medium">User Experience Design</p>
                             <p className="text-text">As a UX professional, my first priority is designing solutions that makes the lives of your users easier and optimises your business goal
                             </p>
@@ -22,7 +22,7 @@ const Parallex = () => {
                         <div className="pr-8">
                             <img src={two} className="" alt="one"/>
                         </div>
-                        <div className="space-y-3 w-[75%]">
+                        <div className="space-y-3 xl:w-[75%]">
                             <p className="font-medium">User Research</p>
                             <p className="text-text">“If you want to create a great product, you have to start by understanding the people who will use it”. Understanding the users is key to creating a successful product
                             </p>
@@ -32,7 +32,7 @@ const Parallex = () => {
                         <div className="pr-8">
                             <img src={three} className="" alt="one"/>
                         </div>
-                        <div className="space-y-3 w-[75%]">
+                        <div className="space-y-3 xl:w-[75%]">
                             <p className="font-medium">Design Interaction</p>
                             <p className="text-text">We cannot denial the fact micro interactions and transitions brings a good feel to an already amazing product and this is my new interest
                             </p>
