@@ -39,7 +39,7 @@ const Header = ({ color, backgroundColor, barColor }) => {
     return (
         <>
             <section 
-                className={`text-[calc(10px+1vw)] z-10 m-0 h-[80px] fixed flex w-full justify-between px-8 md:px-10 py-1 font-medium transition-colors duration-300`}
+                className={`text-[calc(10px+1vw)] z-10 m-0 h-[80px] fixed flex w-full justify-between px-4 md:px-10 py-1 font-medium transition-colors duration-300`}
                 style={{ color, backgroundColor: getBackgroundColor() }}
             >
                 <Link className="flex" to="/">
@@ -81,7 +81,7 @@ const Header = ({ color, backgroundColor, barColor }) => {
                         animate={{ x: 0 }}
                         exit={{ x: '100%' }}
                         transition={{ duration: 0.5 }}
-                        className="fixed top-0 right-0 h-full w-full lg:w-[480px] z-20 bg-black bg-opacity-80 p-10"
+                        className="fixed top-0 right-0 h-full w-full lg:w-[480px] z-20 bg-black bg-opacity-[0.97] p-10"
                     >
                         <div className="relative p-10 text-white">
                             <div className="absolute top-0 right-0 w-16 h-16 bg-primary rounded-full flex items-center justify-center" onClick={toggleSidebar}>
@@ -91,9 +91,9 @@ const Header = ({ color, backgroundColor, barColor }) => {
                                     &times;
                                 </button>
                             </div>
-                            <div className="w-full pt-14 text-sidebar">
+                            <div className="w-full pt-14 text-text font-medium">
                                 <p className="mb-4 tracking-[.25em] font-medium text-sm">NAVIGATION</p>
-                                <div className="bg-sidebar w-full mb-14 h-[0.08rem]"></div>
+                                <div className="bg-text font-medium w-full mb-14 h-[0.08rem]"></div>
                             </div>
                             <ul className="space-y-10 text-6xl">
                                 <li className="list-item"><Link to="/" className="-ml-10">Home</Link></li>
