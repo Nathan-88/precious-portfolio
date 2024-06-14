@@ -24,7 +24,7 @@ const Books = () => {
                                 <p className="">{detail.p1}</p>
                                 <p className="text-secondary text-[0.6rem] mb-6">{detail.by}</p>
                                 </div>
-                                <h4 className="text-md font-[400] mb-2">MY TOP QUOTE</h4>
+                                <h4 className="text-md font-[400] mt-4 xl:mt-2 mb-2">MY TOP QUOTE</h4>
                                 <p className="bg-violet-100 font-light text-[0.6rem] px-3 py-2">{detail.quote}</p>
                             </div>
                         </div>

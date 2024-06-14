@@ -17,14 +17,16 @@ const Footer = () => {
                 <Link to="/about"><button className="xl:mb-16 border text-white border-primary py-2 px-4 font-work-sans font-[400] text-sm rounded-full hover:border-green-600">GET IN TOUCH</button></Link>
             </div>
         </div>
-        <div className="mt-28 bg-black font-work-sans font-[400] text-sm text-text flex flex-wrap justify-around">
+        <div className="mt-28 bg-black font-work-sans font-[400] text-sm text-text flex flex-col md:flex-row items-center md:justify-around">
             <div className="flex gap-2">
                 <p className="">Socials |</p>
                 <img src={lin} className="h-4" alt="socials"/>
                 <img src={beh} className="h-4" alt="socials"/>
                 <img src={insta} className="h-4" alt="socials"/>
             </div>
-            <p className="">Copyright © 2022, <span className="text-primary">Precious</span> | All Right Reserved</p>
+            <p className="hidden md:block">Copyright © 2022, <span className="text-primary">Precious</span> | All Right Reserved</p>
+            <p className="md:hidden">Copyright © 2022, <span className="text-primary">Precious</span> |</p>
+            <p className="md:hidden">All Right Reserved</p>
         </div>
     </section>
     );
