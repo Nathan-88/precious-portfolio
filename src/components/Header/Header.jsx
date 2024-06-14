@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import PropTypes from 'prop-types';
 import './Header.css';
 import Logo from "../../assets/logo-icon.png";
@@ -81,9 +81,9 @@ const Header = ({ color, backgroundColor, barColor }) => {
                         animate={{ x: 0 }}
                         exit={{ x: '100%' }}
                         transition={{ duration: 0.5 }}
-                        className="fixed top-0 right-0 h-full w-full lg:w-[480px] z-20 bg-black bg-opacity-[0.97] p-10"
+                        className="fixed top-0 right-0 h-screen custom-scrollbar overflow-y-auto w-full lg:w-[480px] z-20 bg-black bg-opacity-[0.97] p-10"
                     >
-                        <div className="relative p-10 text-white">
+                        <div className="relative py-10 h-auto text-white">
                             <div className="absolute top-0 right-0 w-16 h-16 bg-primary rounded-full flex items-center justify-center" onClick={toggleSidebar}>
                                 <button 
                                     className="text-4xl font-thin"
@@ -95,11 +95,19 @@ const Header = ({ color, backgroundColor, barColor }) => {
                                 <p className="mb-4 tracking-[.25em] font-medium text-sm">NAVIGATION</p>
                                 <div className="bg-text font-medium w-full mb-14 h-[0.08rem]"></div>
                             </div>
-                            <ul className="space-y-10 text-6xl">
-                                <li className="list-item"><Link to="/" className="-ml-10">Home</Link></li>
-                                <li className="list-item"><Link to="#work" className="-ml-10">Work</Link></li>
-                                <li className="list-item"><Link to="/about" className="-ml-10">Contact</Link></li>
+                            <ul className="lists mb-10 text-6xl">
+                                <Link className="" to="/"><li className="mb-10"><span className="">Home</span></li></Link>
+                                <Link to=""><li className="mb-10"><span className="">Work</span></li></Link>
+                                <Link to="/about"><li className=""><span className="">Contact</span></li></Link>
                             </ul>
+                            <div className="w-full pt-14 text-text font-medium">
+                                <div className="bg-text mb-6 font-medium w-full h-[0.08rem]"></div>
+                                <p className="mb-6 font-medium text-sm">SOCIALS</p>
+                                <div className="flex gap-20 font-medium text-white">
+                                    <Link to="" className="">Linkedn</Link>
+                                    <Link to="" className="">Behance</Link>
+                                </div>
+                            </div>
                         </div>
                     </motion.div>
                 )}

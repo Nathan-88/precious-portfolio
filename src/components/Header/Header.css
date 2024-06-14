@@ -1,7 +1,54 @@
-.list-item {
+/* .list-item {
             list-style: none;
-            transition: list-style 0.5s ease-in-out;
+            transition: list-style 2s ease-in-out;
         }
 .list-item:hover {
     list-style: disc inside;
+} */
+
+.lists {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.lists li {
+    position: relative;
+}
+
+.lists li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 0;
+}
+
+.lists li span {
+    display: inline-block;
+    transition: transform 0.3s; /* Transition for moving the item */
+    z-index: 1; /* Ensure the content is above the marker */
+    position: relative; /* Ensure it doesn't overlap with the marker */
+}
+
+.lists li:hover::before {
+    opacity: 1;
+}
+
+.lists li:hover span{
+    transform: translateX(25px); /* Move the list item to the right */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.custom-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
 }

@@ -4,7 +4,7 @@ const About = ()=> {
         <motion.section 
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.4 }}
+            transition={{ duration: 1 }}
         className="flex flex-col md:flex-row px-6 gap-x-28 pt-28 xl:px-28">
             <div className="">
                 <p className="text-secondary p-2 mb-3">
