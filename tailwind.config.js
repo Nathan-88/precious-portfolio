@@ -18,7 +18,8 @@ export default {
         tertiary: "#F1F1F1",
         whitecard: "#F5F5F5",
         hueblack: "#454545",
-        card: "#F9F9F9"
+        card: "#F9F9F9",
+        hrline: "#898383"
       },
       // backgroundImage: {
       //   parallex: "linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url('./src/assets/backImg.jpg')",

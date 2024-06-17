@@ -7,6 +7,8 @@ import ProcurementLayout from "../layouts/ProcurementLayout";
 import Procurement from "../pages/Procurement";
 import WhiteCollarLayout from "../layouts/WhiteCollarLayout";
 import WhiteCollar from "../pages/WhiteCollar";
+import BixLayout from "../layouts/BixLayout";
+import Bix from "../pages/Bix";
 
 const Router = () =>{
     const router = createBrowserRouter(
@@ -24,6 +26,9 @@ const Router = () =>{
             </Route>
             <Route path="projects" element={<WhiteCollarLayout/>}>
                 <Route path="WhiteCollar" element={<WhiteCollar/>}/>
+            </Route>
+            <Route path="projects" element={<BixLayout/>}>
+                <Route path="bix" element={<Bix/>}/>
             </Route>
             </>
         )

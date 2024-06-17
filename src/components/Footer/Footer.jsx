@@ -6,7 +6,7 @@ import Copy from "./Copy";
 
 const Footer = () => {
     return(
-    <section className="-mt-[7px] bg-black px-8 py-6 md:px-16 h-auto  xl:w-[80%] z-10">
+    <section className=" bg-black px-8 py-6 md:px-16 h-auto  xl:w-[80%] z-10">
         <div className="p-4 py-10 xl:py-28 xl:px-28 gap-10 flex flex-col xl:flex-row justify-center xl:items-center">
             <div className="">
                 <p className="text-primary text-sm mb-6">CONTACT ME</p>

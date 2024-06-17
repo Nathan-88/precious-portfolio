@@ -28,7 +28,7 @@ const Home = () => {
                             <p className="mb-2">UX Designer &</p>
                             <p>Researcher</p>
                         </div>
-                        <p className="gif text-[2.8rem] md:text-6xl lg:text-7xl xl:absolute xl:top-[60%] xl:text-[4.9rem] font-bold z-10">Based in Germany</p>
+                        <p className="gif text-white text-[2.8rem] md:text-6xl lg:text-7xl xl:absolute xl:top-[60%] xl:text-[4.9rem] font-bold z-10">Based in Germany</p>
                     </div>
                     {/* image */}
                     <div className="pt-20 xl:pt-0 2xl:pt-5 2xl:w-[50%] 3xl:w-[55%]">
@@ -43,8 +43,8 @@ const Home = () => {
         <Myservice/>
         <Parallex/>
         <Books/>
-        <Portrait/>
-        <ImageSlider/>
+        {/* <Portrait/>
+        <ImageSlider/> */}
         </>
     )
 }
