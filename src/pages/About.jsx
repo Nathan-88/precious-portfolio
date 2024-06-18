@@ -25,7 +25,7 @@ const About = ()=> {
                 <h2 className="text-marino text-lg">CONTACT</h2>
                 <a href="mailto:Oguazuprecious@gmail.com"><p className="text-black text-md">oguazuprecious@gmail.com</p></a>
                 <p className="text-black">Download Resume</p>
-                <a href="www.linkedin.com/in/precious-oguazu"><p className="text-black">Find me on Linkedin</p></a>
+                <a target="_blank" href="https://www.linkedin.com/in/precious-oguazu"><p className="text-black">Find me on Linkedin</p></a>
                 </div>
 
                 <div className="space-y-1">
