@@ -43,7 +43,7 @@ const JumpTo = () => {
                     </div>
                 </div>
                 <div className=" bg-primary py-3 mt-8 px-4  xl:w-fit rounded-full text-center">
-                    <Link to="https://SeamlessHR.com" className="text-white">Go to SeamlessHR.com</Link>
+                    <a target="_blank" href="https://SeamlessHR.com" className="text-white">Go to SeamlessHR.com</a>
                 </div>
             </section>
         </section>

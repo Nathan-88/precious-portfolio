@@ -1,5 +1,6 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+
 import { Link, NavLink } from "react-router-dom";
 import PropTypes from 'prop-types';
 import './Header.css';
@@ -13,6 +14,10 @@ const Header = ({ color, backgroundColor, barColor }) => {
         setIsOpen(!isOpen);
     };
 
+    const ref = useRef(null);
+    const handleClick = () => {
+    ref.current?.scrollIntoView({behavior: 'smooth'});
+    };
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 500) {
@@ -95,17 +100,18 @@ const Header = ({ color, backgroundColor, barColor }) => {
                                 <p className="mb-4 tracking-[.25em] font-medium text-sm">NAVIGATION</p>
                                 <div className="bg-text font-medium w-full mb-14 h-[0.08rem]"></div>
                             </div>
-                            <ul className="lists mb-10 text-6xl">
+                            <ul className="lists mb-10 text-5xl font-[400]">
                                 <Link className="" to="/"><li className="mb-10"><span className="">Home</span></li></Link>
-                                <Link to=""><li className="mb-10"><span className="">Work</span></li></Link>
-                                <Link to="/about"><li className=""><span className="">Contact</span></li></Link>
+                                <Link className="" to="/about"><li className="mb-10"><span className="">About</span></li></Link>
+                                {/* <Link to="/#work"><li className="mb-10"><span className="">Work</span></li></Link> */}
+                                <a href="mailto:Oguazuprecious@gmail.com"><li className=""><span className="">Contact</span></li></a>
                             </ul>
                             <div className="w-full pt-14 text-text font-medium">
                                 <div className="bg-text mb-6 font-medium w-full h-[0.08rem]"></div>
                                 <p className="mb-6 font-medium text-sm">SOCIALS</p>
                                 <div className="flex gap-20 font-medium text-white">
-                                    <Link to="" className="">Linkedn</Link>
-                                    <Link to="" className="">Behance</Link>
+                                    <a target="_blank" href="https://www.linkedin.com/in/precious-oguazu" className="">Linkedn</a>
+                                    <a target="_blank" href="https://www.behance.net/chidiogpreciou" className="">Behance</a>
                                 </div>
                             </div>
                         </div>

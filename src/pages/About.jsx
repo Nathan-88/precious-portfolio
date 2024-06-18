@@ -23,9 +23,9 @@ const About = ()=> {
             <div className="flex flex-col space-y-4 text-md p-2 items-start">
                 <div className="space-y-1">
                 <h2 className="text-marino text-lg">CONTACT</h2>
-                <p className="text-black text-md">oguazuprecious@gmail.com</p>
+                <a href="mailto:Oguazuprecious@gmail.com"><p className="text-black text-md">oguazuprecious@gmail.com</p></a>
                 <p className="text-black">Download Resume</p>
-                <p className="text-black">Find me on Linkedin</p>
+                <a href="www.linkedin.com/in/precious-oguazu"><p className="text-black">Find me on Linkedin</p></a>
                 </div>
 
                 <div className="space-y-1">
