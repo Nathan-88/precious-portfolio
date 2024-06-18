@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import procurem from "../../assets/PROCUREMENT.png"
-import footerproc from "../../assets/footerprocur.png"
 import Copy from "./Copy";
 
 const ProjectFooter = ({link, img1, text, img2}) => {
@@ -11,8 +9,8 @@ const ProjectFooter = ({link, img1, text, img2}) => {
 
                 <img src={img1} className="mb-16"/>
 
-                <div className="flex flex-col items-center">
-                    <img src={img2} className=""/>
+                <div className="flex flex-col overflow-hidden items-center">
+                    <Link to={link}><img src={img2} className="transition-transform transform hover:scale-110 duration-300 ease-in-out"/></Link>
                     <div className="h-[0.1rem] w-full md:w-[480px] bg-text"></div>
                 </div>
             </div>
