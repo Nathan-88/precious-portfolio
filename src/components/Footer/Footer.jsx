@@ -10,8 +10,8 @@ const Footer = () => {
         <div className="py-10 md:py-16 xl:py-28 gap-10 flex flex-col xl:flex-row justify-center items-center">
             <div className="px-6 xl:px-0">
                 <p className="text-primary font-medium text-sm mb-6">CONTACT ME</p>
-                <p className="gif font-bold text-white text-xxl">Let's</p>
-                <p className="text-white font-bold text-xxl">Work Together</p>
+                <p className="gif font-bold text-white text-6xl md:text-xxl">Let's</p>
+                <p className="text-white font-bold text-6xl md:text-xxl">Work Together</p>
             </div>
             <div className="">
                 <a href="mailto:Oguazuprecious@gmail.com"><button className="xl:mb-16 border text-white border-primary py-2 px-4 font-work-sans font-[400] text-sm rounded-full hover:border-green-600">GET IN TOUCH</button></a>
