@@ -28,7 +28,7 @@ export default {
       },
       fontSize: {
         sm: ['15px', '22.2px'],
-        base: ['16px', '24px'],
+        base: ['17px', '24px'],
         lg: ['18px', '28px'],
         xl: ['20px', '28px'],
         '2xl': ['24px', '32px'],
