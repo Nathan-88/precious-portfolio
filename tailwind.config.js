@@ -33,7 +33,7 @@ export default {
         xl: ['20px', '28px'],
         '2xl': ['24px', '32px'],
         '3xl': ['28px', '31.4px'],
-        '4xl': ['36px', '40px'],
+        '4xl': ['38px', '46.8px'],
         xxl: ['80px', '88px'],
 
     },
