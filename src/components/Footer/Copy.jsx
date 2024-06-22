@@ -3,8 +3,8 @@ import beh from "../../assets/behance (2).png"
 import lin from "../../assets/linkedin.png"
 const Copy = () => {
     return(
-        <div className="mt-28 bg-black font-work-sans font-[400] text-sm text-text flex flex-col md:flex-row items-center md:justify-around">
-            <div className="flex gap-2">
+        <div className="py-16 bg-[#060606] font-work-sans font-[400] text-sm text-text flex flex-col md:flex-row items-center md:justify-around">
+            <div className="flex items-center gap-2">
                 <p className="">Socials |</p>
                 <img src={lin} className="h-4" alt="socials"/>
                 <img src={beh} className="h-4" alt="socials"/>
