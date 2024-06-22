@@ -18,7 +18,7 @@ const Home = () => {
             {/* absolute top-[30%] 2xl:top-[50%] text-white w-full left-[45%] md:left-[50%] 2xl:left-[55%] -translate-y-[50%] -translate-x-[40%] */}
             <div className="pl-[8%] md:pl-[15%] pt-[5%] flex flex-col justify-center ">
                     {/* text container */}
-                    <div className="my-[40%] md:mt-[15%] lg:mt-[10%] 2xl:mt-[20%] lg:pl-4 flex flex-col text-3xl ">
+                    <div className="justify-center h-screen lg:pl-4 flex flex-col text-3xl ">
                         <div className="flex items-center">
                             <span className="bg-white w-[20%] xl:w-[10%] h-[2px] mr-2"></span>
                             <p className="text-sm font-medium font-roboto">OGUAZU PRECIOUS</p>
