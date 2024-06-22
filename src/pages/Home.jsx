@@ -6,7 +6,7 @@ import Myservice from "../components/Myservice"
 import Parallex from "../components/Parallex"
 import Books from "../components/Books"
 import Portrait from "../components/Portrait"
-import myPic from "/src/assets/myPic.png"
+// import myPic from "/src/assets/myPic.png"
 import ImageSlider from "../components/ImageSlider/ImageSlider"
 
 
@@ -15,26 +15,24 @@ const Home = () => {
     return(<>
         <section
         className="h-screen relative bg-center text-white bg-fixed bg-no-repeat bg-cover parallex overflow-hidden">
-            <div className=" absolute top-[65%] md:top-[63%] 2xl:top-[50%] text-white w-full left-[45%] md:left-[50%] 2xl:left-[55%] -translate-y-[50%] -translate-x-[40%] ">
-                {/* container for text and image */}
-                <div className="md:pt-20 lg:pt-20 h-full relative flex flex-col min-[1027px]:flex-row xl:flex-row 2xl:flex-row">
+            {/* absolute top-[30%] 2xl:top-[50%] text-white w-full left-[45%] md:left-[50%] 2xl:left-[55%] -translate-y-[50%] -translate-x-[40%] */}
+            <div className="pl-[15%] pt-[5%] flex flex-col justify-center ">
                     {/* text container */}
-                    <div className="mt-9 xl:mt-[14%] 2xl:mt-[20%] lg:pl-4 flex flex-col text-3xl ">
-                        <div className="flex">
-                            <span className="bg-white w-[16%] h-[2px] mt-[10px] mr-2"></span>
-                            <p className="text-xl xl:text-sm">OGUAZU PRECIOUS</p>
+                    <div className="mt-9 xl:mt-[10%] 2xl:mt-[20%] lg:pl-4 flex flex-col text-3xl ">
+                        <div className="flex items-center">
+                            <span className="bg-white w-[10%] h-[2px] mr-2"></span>
+                            <p className="text-sm font-medium font-roboto xl:text-sm">OGUAZU PRECIOUS</p>
                         </div>
-                        <div className="py-5 font-bold  text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-                            <p className="mb-2">UX Designer &</p>
+                        <div className="mt-5 mb-3 font-bold  text-4xl md:text-xxl">
+                            <p className="mb-2">UX Designer/</p>
                             <p>Researcher</p>
                         </div>
-                        <p className="gif text-white text-[2.8rem] md:text-6xl lg:text-7xl xl:absolute xl:top-[60%] xl:text-[4.9rem] font-bold z-10">Based in Germany</p>
+                        <p className="gif text-white text-[2.8rem] md:text-6xl lg:text-xxl  xl:text-[4.9rem] font-bold z-10">Based in Germany</p>
                     </div>
                     {/* image */}
-                    <div className="pt-20 xl:pt-0 2xl:pt-5 2xl:w-[50%] 3xl:w-[55%]">
+                    {/* <div className="pt-20 xl:pt-0 2xl:pt-5 2xl:w-[50%] 3xl:w-[55%]">
                         <img className="w-full h-auto object-cover" src={myPic} alt="my pic" />
-                    </div>
-                </div>   
+                    </div> */}  
             </div>
         </section>
         <LogoCarousel/>

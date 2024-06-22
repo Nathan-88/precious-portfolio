@@ -44,7 +44,7 @@ const Header = ({ color, backgroundColor, barColor }) => {
     return (
         <>
             <section 
-                className={`text-[calc(10px+1vw)] z-[13] m-0 h-[75px] fixed flex w-full justify-between px-4 md:px-10 py-1 font-medium transition-colors duration-300`}
+                className={`text-sm z-[13] m-0 h-[60px] fixed flex w-full justify-between px-4 md:px-10 py-1 font-medium transition-colors duration-300`}
                 style={{ color, backgroundColor: getBackgroundColor() }}
             >
                 <Link className="flex" to="/">
@@ -65,18 +65,17 @@ const Header = ({ color, backgroundColor, barColor }) => {
                     className="group flex justify-center items-center cursor-pointer relative"
                     onClick={toggleSidebar}
                 >
-                    <div className="absolute"></div>
-                    <div className="w-[30px] flex flex-col items-center mr-3">
+                    <div className="w-[24px] flex flex-col items-center mr-3">
                         <div 
-                            className="w-4 h-[4px] ml-auto mb-2 group-hover:w-8 group-hover:ml-0 transition-all duration-500" 
+                            className="w-3 h-[3px] ml-auto mb-2 group-hover:w-8 group-hover:ml-0  rounded-lg transition-all duration-500" 
                             style={{ backgroundColor: barColor }}
                         ></div>
                         <div 
-                            className="w-4 h-[4px] mr-auto group-hover:w-8 group-hover:mr-0 transition-all duration-500" 
+                            className="w-3 h-[3px] mr-auto group-hover:w-8 group-hover:mr-0 rounded-lg transition-all duration-500" 
                             style={{ backgroundColor: barColor }}
                         ></div>
                     </div>
-                    <p className="transition duration-500 group-hover:translate-x-2">Menu</p>
+                    <p className="font-work-sans font-[400] transition duration-500 group-hover:translate-x-2 ">Menu</p>
                 </motion.div>
             </section>
             <AnimatePresence>

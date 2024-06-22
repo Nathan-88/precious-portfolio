@@ -21,14 +21,22 @@ export default {
         card: "#F9F9F9",
         hrline: "#898383"
       },
-      // backgroundImage: {
-      //   parallex: "linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),url('./src/assets/backImg.jpg')",
-      //   darkimg: "linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),url('./src/assets/darkImg.jpg')",
-      // },
       fontFamily: {
         'work-sans': ['"Work Sans"', 'sans-serif'],
+        'roboto': ["Roboto", 'sans-serif'],
         'Helvetica-Neue': ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif']
       },
+      fontSize: {
+        sm: ['15px', '22.2px'],
+        base: ['16px', '24px'],
+        lg: ['18px', '28px'],
+        xl: ['20px', '28px'],
+        '2xl': ['24px', '32px'],
+        '3xl': ['28px', '31.4px'],
+        '4xl': ['36px', '40px'],
+        xxl: ['80px', '88px'],
+
+    },
     },
 
     screens: {
