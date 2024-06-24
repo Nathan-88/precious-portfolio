@@ -27,12 +27,13 @@ export default {
         'Helvetica-Neue': ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif']
       },
       fontSize: {
+        xs: ['13px', '25.2px'],
         sm: ['15px', '22.2px'],
         base: ['17px', '24px'],
         lg: ['18px', '28px'],
         xl: ['20px', '28px'],
         '2xl': ['24px', '32px'],
-        '3xl': ['28px', '31.4px'],
+        '3xl': ['30px', '21.16px'],
         '4xl': ['38px', '46.8px'],
         xxl: ['80px', '88px'],
 

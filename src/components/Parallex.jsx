@@ -5,8 +5,8 @@ import picfix from "../assets/backImg.jpg"
 const Parallex = () => {
     return(
         <section className="relative ">
-            <div className="bg-black xl:-mt-20 text-white xl:w-[55%] py-24 px-10">
-                <h3 className="text-4xl font-medium mb-10 ">Design is not just about how it looks but also about how it works...</h3>
+            <div className="bg-black xl:-mt-16 text-white xl:w-[55%] py-24 px-10">
+                <h3 className="text-4xl font-bold mb-10 ">Design is not just about how it looks but also about how it works...</h3>
                 <div className="space-y-10">
                     <div className="flex justify-start items-center">
                         <div className="pr-8">

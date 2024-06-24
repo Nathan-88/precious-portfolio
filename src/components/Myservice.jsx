@@ -1,9 +1,9 @@
 const Myservice = () => {
     return(
         <section className="h-auto darkimg p-12 xl:p-20 text-end">
-            <div className="pt-10 space-y-1">
-                <p className="text-primary text-xl xl:text-2xl">I can Help You with</p>
-                <p className="text-white text-3xl xl:text-6xl font-semibold">My Services</p>
+            <div className="pt-10">
+                <p className="text-primary mb-3 font-[Poppins] font-semibold text-xS tracking-wider">I CAN HELP YOU WITH</p>
+                <p className="text-white text-4xl font-bold">My Services</p>
             </div>
 
         </section>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import insta from "../../assets/insta.png"
 import beh from "../../assets/behance (2).png"
 import lin from "../../assets/linkedin.png"
-import Copy from "./Copy";
+
 
 const Footer = () => {
     return(
