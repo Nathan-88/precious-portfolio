@@ -22,7 +22,7 @@ const Mywork = () => {
                         
                         <p className="font-medium text-sm text-text self-start">{content.date}</p>
                         <div className="h-[100px]">
-                            <h4 className="self-start text-3xl font-bold mb-3 text-black">{content.h}</h4>
+                            <h4 className="self-start text-2xl xl:text-[30px] xl:leading-[21.6px] font-bold mb-3 text-black">{content.h}</h4>
                             <p className="font-work-sans tracking-[0.04em] text-sm font-[400]">{content.text}</p>
                         </div>
                         
