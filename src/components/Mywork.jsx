@@ -17,7 +17,7 @@ const Mywork = () => {
             <div className="grid grid-col-1 xl:grid-cols-3 gap-y-4  gap-x-2 mt-10">
                 {contents.map((content, index) => (
                     <Link to={content.link}><div className="bg-card py-10 px-8 rounded-lg hover:shadow-md hover:scale-[1.01] transition hover:duration-500">
-                    <div className="text-text flex flex-col justify-center items-center space-y-3">
+                    <div className="text-text flex flex-col justify-center items-center mb-4 xl:mb-1 space-y-3">
                         <img src={content.img} alt="card image"/>
                         
                         <p className="font-medium text-sm text-text self-start">{content.date}</p>

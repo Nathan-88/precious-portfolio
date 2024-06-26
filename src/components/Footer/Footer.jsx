@@ -14,7 +14,7 @@ const Footer = () => {
                 <p className="text-white font-bold text-6xl md:text-xxl">Work Together</p>
             </div>
             <div className="">
-                <a href="mailto:Oguazuprecious@gmail.com"><button className="xl:mb-16 border text-white border-primary py-2 px-4 font-work-sans font-[400] text-sm rounded-full hover:border-green-600">GET IN TOUCH</button></a>
+                <a href="mailto:Oguazuprecious@gmail.com"><button className="xl:mb-16 border text-white border-primary py-2 px-4 font-work-sans font-[400] text-sm rounded-full hover:bg-primary">GET IN TOUCH</button></a>
             </div>
         </div>
         <div className="py-16 bg-[#060606] font-work-sans font-[400] text-sm text-text flex flex-col md:flex-row items-center md:justify-around">

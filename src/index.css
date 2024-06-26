@@ -22,7 +22,7 @@ body{
 }
 
 .parallex {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('/src/assets/backImg.jpg');
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.8)), url('/src/assets/backImg.jpg');
 }
 
 .darkimg {
@@ -48,7 +48,7 @@ section{
 
 .gif {
     color: black;
-    opacity: 0.8;
+    opacity: ;
 
     text-shadow: -1px 1px 0 #fff,
         1px 1px 0 #fff,

@@ -18,6 +18,7 @@ export default {
         tertiary: "#F1F1F1",
         whitecard: "#F5F5F5",
         hueblack: "#454545",
+        hueeblack: "#474747",
         card: "#F9F9F9",
         hrline: "#898383"
       },
@@ -27,7 +28,7 @@ export default {
         'Helvetica-Neue': ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif']
       },
       fontSize: {
-        xs: ['13px', '25.2px'],
+        xs: ['13px', '14.8px'],
         sm: ['15px', '22.2px'],
         base: ['17px', '24px'],
         lg: ['18px', '28px'],
