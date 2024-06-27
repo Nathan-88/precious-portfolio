@@ -21,21 +21,23 @@ const Projectinfo =()=> {
                     <p className="font-[400] tracking-widest text-[13px] pr-6">002</p>
                 </div>
                 <div className="h-[0.07rem] mb-5 xl:mb-10 bg-hrline"></div>
-                <div className="mb-8">
-                    <h4 className="font-bold mb-5 text-[22px]">Role</h4>
-                    <div className="text-secondary font-work-sans font-[400] text-sm">
-                        <p>UX Designer</p>
-                        <p>UX Researcher</p>
-                        <p>Facilitator</p>
+                <div className="flex gap-x-32 xl:block">
+                    <div className="mb-8">
+                        <h4 className="font-bold mb-5 text-[22px]">Role</h4>
+                        <div className="text-secondary font-work-sans font-[400] text-sm">
+                            <p>UX Designer</p>
+                            <p>UX Researcher</p>
+                            <p>Facilitator</p>
+                        </div>
                     </div>
-                </div>
-                <div className="mb-8">
-                    <h4 className="font-bold mb-5 text-[22px]">Tools</h4>
-                    <div className="text-secondary font-work-sans font-[400] text-sm">
-                        <p>Figma</p>
-                        <p>Klaxoon</p>
-                        <p>Dovetail</p>
-                        <p>Jira</p>
+                    <div className="mb-8">
+                        <h4 className="font-bold mb-5 text-[22px]">Tools</h4>
+                        <div className="text-secondary font-work-sans font-[400] text-sm">
+                            <p>Figma</p>
+                            <p>Klaxoon</p>
+                            <p>Dovetail</p>
+                            <p>Jira</p>
+                        </div>
                     </div>
                 </div>
                 

@@ -9,7 +9,7 @@ const Numbers = () => {
                 <div className="h-[0.07rem] bg-hrline"></div>
             </div>
             <div className="xl:pl-14 flex flex-col xl:flex-row gap-x-28 items-center">
-                <div className="mb-8 xl:mb-0xl:w-[64%] gap-x-16 gap-y-20 grid grid-cols-1 xl:grid-cols-2">
+                <div className="mb-8 xl:mb-0xl:w-[60%] gap-x-16 gap-y-20 grid grid-cols-1 xl:grid-cols-2">
                     <div className=" flex flex-col justify-center items-center">
                         <h3 className="text-[80px] font-bold">2</h3>
                         <p className="font-[400] font-work-sans text-[22px]">Core projects worked on</p>
@@ -28,7 +28,7 @@ const Numbers = () => {
                         <p className="font-[400] font-work-sans text-[22px]">Target market location visited</p>
                     </div>
                 </div>
-                <div className=" xl:w-[31%] xl:pt-16 px-2 xl:px-0 font-bold text-[24px] xl:text-[28px]">
+                <div className="text-center xl:text-start xl:w-[34%] xl:pt-16 px-2 xl:px-0 font-bold text-[24px] xl:text-[28px]">
                     <p className="">My journey so far has been impactful and practical.</p>
                     <p>Here are the numbers to quantify a bit of my experience so far</p>
                 </div>

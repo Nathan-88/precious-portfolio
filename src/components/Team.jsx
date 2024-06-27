@@ -1,7 +1,7 @@
 const Team =()=> {
     return(
         <section className="py-16 px-8 xl:px-20 bg-tertiary">
-            <div className="mb-10">
+            <div className="mb-10 xl:mb-3">
                 <div className="mb-2 w-full flex items-center justify-between">
                     <h3 className="font-bold text-3xl xl:text-4xl">The Team</h3>
                     <p className="font-[400] tracking-widest text-[13px] pr-4">007</p>
