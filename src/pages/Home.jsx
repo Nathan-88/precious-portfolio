@@ -1,4 +1,3 @@
-
 import LogoCarousel from "../components/LogoCarousel"
 import AboutMe from "../components/AboutMe"
 import Mywork from "../components/Mywork"
@@ -7,11 +6,19 @@ import Parallex from "../components/Parallex"
 import Books from "../components/Books"
 //import Portrait from "../components/Portrait"
 // import myPic from "/src/assets/myPic.png"
-import ImageSlider from "../components/ImageSlider/ImageSlider"
+// import ImageSlider from "../components/ImageSlider/ImageSlider"
+
+
 
 
 const Home = () => {
 
+    const scrollToSection = () => {
+        const section = document.getElementById('work');
+        if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
     return(<>
         <section
         className="md:h-screen relative bg-center text-white bg-fixed bg-no-repeat bg-cover parallex overflow-hidden">
@@ -27,7 +34,8 @@ const Home = () => {
                             <p className="mb-2">UX Designer/</p>
                             <p>Researcher</p>
                         </div>
-                        <p className="gif text-white text-4xl md:text-6xl lg:text-xxl  xl:text-[4.9rem] font-bold z-10">Based in Germany</p>
+                        <p className="gif mb-5 text-white text-4xl md:text-6xl lg:text-xxl  xl:text-[4.9rem] font-bold z-10">Based in Germany</p>
+                        <button onClick={scrollToSection} className="bg-primary hover:opacity-60 text-white font-work-sans font-[400] text-sm px-6 tracking-wide w-fit py-3 rounded-full">View selected work</button>
                     </div>
                     {/* image */}
                     {/* <div className="pt-20 xl:pt-0 2xl:pt-5 2xl:w-[50%] 3xl:w-[55%]">

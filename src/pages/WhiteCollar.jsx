@@ -19,7 +19,7 @@ const WhiteItems =[
 const WhiteCollar = () => {
     return(
         <section className="bg-tertiary">
-            <div className="py-28 md:pl-32 flex flex-col items-start text-4xl xl:text-[70px] leading-[88px] xl:font-[300]">
+            <div className="py-16 md:py-28 md:pl-32 flex flex-col items-start pl-4 text-2xl md:text-4xl xl:text-[70px] xl:leading-[88px] font-[300]">
                 <p className="">Can our digital job-</p>
                 <p className="">search platforms be more</p>
                 <p className="">convenient & resourceful?</p>

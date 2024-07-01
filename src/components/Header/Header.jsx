@@ -1,12 +1,13 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 
-import { Link, NavLink } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import PropTypes from 'prop-types';
 import './Header.css';
 import Logo from "../../assets/logo-icon.png";
 
 const Header = ({ color, backgroundColor, barColor }) => {
+    const navigate = useNavigate();
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
@@ -40,6 +41,10 @@ const Header = ({ color, backgroundColor, barColor }) => {
         }
         return isScrolled ? backgroundColor : 'transparent';
     };
+
+    const scrollToSection = () => {
+        navigate('/', { state: { target: 'work' }});
+    }
 
     return (
         <>
@@ -102,7 +107,7 @@ const Header = ({ color, backgroundColor, barColor }) => {
                             <ul className="lists mb-10 text-5xl font-[400]">
                                 <Link className="" to="/"><li className="mb-10"><span className="">Home</span></li></Link>
                                 <Link className="" to="/about"><li className="mb-10"><span className="">About</span></li></Link>
-                                {/* <Link to="/#work"><li className="mb-10"><span className="">Work</span></li></Link> */}
+                                <button onClick={scrollToSection}><li className="mb-10"><span className="">Work</span></li></button>
                                 <a href="mailto:Oguazuprecious@gmail.com"><li className=""><span className="">Contact</span></li></a>
                             </ul>
                             <div className="w-full pt-14 text-text font-medium">

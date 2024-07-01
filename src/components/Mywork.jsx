@@ -12,11 +12,11 @@ const contents = [
 const Mywork = () => {
     
     return(
-        <section className="p-6 md:py-16 bg-white h-auto">
+        <section id="work" className="p-6 md:py-16 bg-white h-auto">
             <h2 className="text-primary font-bold text-center text-[20px] leading-[17.2px] font-[Poppins]">SELECTED WORK</h2>
             <div className="grid grid-col-1 xl:grid-cols-3 gap-y-4  gap-x-2 mt-10">
                 {contents.map((content, index) => (
-                    <Link to={content.link}><div className="bg-card py-10 px-8 rounded-lg hover:shadow-md hover:scale-[1.01] transition hover:duration-500">
+                    <Link key={index} to={content.link}><div className="bg-card py-10 px-8 rounded-lg hover:shadow-md hover:scale-[1.01] transition hover:duration-500">
                     <div className="text-text flex flex-col justify-center items-center mb-4 xl:mb-1 space-y-3">
                         <img src={content.img} alt="card image"/>
                         
