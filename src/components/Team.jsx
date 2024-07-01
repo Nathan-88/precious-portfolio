@@ -9,12 +9,12 @@ const Team =()=> {
                 <div className="h-[0.07rem] bg-hrline"></div>
             </div>
             <div className="mb-10 xl:mb-16 flex flex-col xl:flex-row justify-between">
-                <div className="mb-8 xl:mb-0 xl:w-[63%] text-hueblack font-bold text-[1.75rem]">
+                <div className="mb-8 xl:mb-0 xl:w-[63%] text-hueblack font-bold text-3xl">
                     <p className="">My core team consist of cross-functional teammates whose value to bring their best work forward has helped me to be a better team player and UX Designer</p>
                 </div>
                 <div className="w-[31%]">
                     <h4 className="font-bold text-[1.375rem]">Team</h4>
-                    <div className="text-[15px] font-work-sans font-[400]">
+                    <div className="text-sm text-secondary font-work-sans font-[400]">
                         <p className="">2 UX Designers</p>
                         <p className="">Frontend developer</p>
                         <p className="">Backend developer</p>

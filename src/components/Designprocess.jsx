@@ -9,8 +9,8 @@ const Designprocess =() => {
             <div className="h-[0.07rem] mb-4 bg-hrline"></div>
             <div className="flex flex-col xl:flex-row justify-between">
                 <div className="mb-8 xl:mb-0 xl:w-[67%]">
-                    <h4 className="text-hueblack font-bold text-[24px] md:text-[28px] mb-4">Our E2E process supports us to break through digital healthcare innovations, striving for product market fit.</h4>
-                    <p className="font-[400] font-work-sans text-[15px] xl:w-[90%]">Although I can’t share details of the Vision Next project, this is a basic end-2-end process that guides BI X innovative process. At each stage, we pitch to the BI X team showing the required evidence that supports moving to the next phase, please note that any project at BI X, can be dropped at any stage if it fails to align with our business strategy or fails to provide the required evidence that supports the market, customers and available resources. BI X is a digital lab where we discover potential disruptive solutions. </p>
+                    <h4 className="text-hueblack font-bold text-[24px] md:text-3xl mb-4">Our E2E process supports us to break through digital healthcare innovations, striving for product market fit.</h4>
+                    <p className="font-[400] text-secondary font-work-sans text-[15px] xl:w-[90%]">Although I can’t share details of the Vision Next project, this is a basic end-2-end process that guides BI X innovative process. At each stage, we pitch to the BI X team showing the required evidence that supports moving to the next phase, please note that any project at BI X, can be dropped at any stage if it fails to align with our business strategy or fails to provide the required evidence that supports the market, customers and available resources. BI X is a digital lab where we discover potential disruptive solutions. </p>
                 </div>
                 <div className="xl:w-[30%]">
                     <h4 className="text-hueblack font-bold text-[24px] md:text-[28px] mb-3">Highlights</h4>
