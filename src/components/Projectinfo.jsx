@@ -21,7 +21,7 @@ const Projectinfo =()=> {
                     <p className="font-[400] tracking-widest text-[13px] pr-6">002</p>
                 </div>
                 <div className="h-[0.07rem] mb-5 xl:mb-10 bg-hrline"></div>
-                <div className="flex gap-x-32 xl:block">
+                <div className="grid grid-cols-2 md:grid-cols-3 xl:block">
                     <div className="mb-8">
                         <h4 className="font-bold mb-2 text-[22px]">Role</h4>
                         <div className="text-secondary font-work-sans font-[400] text-sm">
