@@ -19,13 +19,14 @@ const WhiteItems =[
 const WhiteCollar = () => {
     return(
         <section className="bg-tertiary">
-            <div className="pt-28 pb-20 px-4 md:px-20 md:w-[80%] xl:w-full  xl:px-36 ">
-                <p className="text-4xl xl:text-5xl xl:font-[300]">Can our digital job-</p>
-                <p className="xl:w-[60%] text-4xl xl:text-5xl xl:font-[300] md:leading-snug ">search platforms be more convenient & resourceful?</p>
+            <div className="py-28 md:pl-32 flex flex-col items-start text-4xl xl:text-[70px] leading-[88px] xl:font-[300]">
+                <p className="">Can our digital job-</p>
+                <p className="">search platforms be more</p>
+                <p className="">convenient & resourceful?</p>
             </div>
             {/* whitecollar */}
             <div className="py-20 flex flex-col-reverse bg-black xl:flex-row xl:justify-between">
-                <div className="md:px-16 xl:pl-36 xl:w-[55%] p-6 ">
+                <div className="md:px-16 xl:pl-32 xl:w-[55%] p-6 ">
                     <div className="flex mb-8">
                         <img src={vector}  alt="whitecollar"/>
                         <p className="pl-2 text-3xl text-white">WhiteCollar

@@ -16,7 +16,7 @@ const Generalrespon = () => {
                     <p className="text-sm font-work-sans text-secondary font-[400] xl:w-[94%]">As a UX Designer at BI X, you are expected to work cross-functionally, supporting with your expertise in user research & design. Your job also doesn’t end with your core projects. You also get to support other teammates on task that aligns with the overall objective </p>
                 </div>
             </div>
-            <div className="flex flex-col mb-8 xl:flex-row items-center justify-between">
+            <div className="flex flex-col mb-8 xl:flex-row items-center xl:items-start justify-between">
                 <div className="mb-8 xl:mb-0 xl:w-[65%]">
                     <h4 className="font-500 text-xs mb-4">01</h4>
                     <h4 className="font-bold mb-4 text-3xl text-hueblack">Gaining Context</h4>
@@ -28,7 +28,7 @@ const Generalrespon = () => {
                     <p className="text-sm font-[400] text-secondary font-work-sans ">Because I joined the team at the discovery phase, the next step was to set up our team call to define our business model Canva, value proposition, and backlog of jobs to be done.</p>
                 </div>
             </div>
-            <div className="flex flex-col mb-8 xl:flex-row items-center justify-between">
+            <div className="flex flex-col mb-8 xl:flex-row items-center xl:items-start justify-between">
                 <div className="mb-8 xl:mb-0 xl:w-[65%]">
                     <h4 className="font-500 text-[13px] mb-4">03</h4>
                     <h4 className="font-bold mb-4 text-3xl text-hueblack">Designing</h4>
@@ -40,7 +40,7 @@ const Generalrespon = () => {
                     <p className="text-sm font-[400] text-secondary font-work-sans ">As a designer at BI X, it is paramount that you are able to use and maintain the existing design system for consistency and standard and this I do effortlessly</p>
                 </div>
             </div>
-            <div className="flex flex-col mb-8 xl:flex-row justify-between">
+            <div className="flex flex-col mb-8 items-center xl:items-start xl:flex-row justify-between">
                 <div className="mb-8 xl:mb-0 xl:w-[65%]">
                     <h4 className="font-500 text-[13px] mb-4">05</h4>
                     <h4 className="font-bold mb-4 text-3xl text-hueblack">User research</h4>
