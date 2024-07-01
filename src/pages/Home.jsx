@@ -34,7 +34,7 @@ const Home = () => {
                             <p className="mb-2">UX Designer/</p>
                             <p>Researcher</p>
                         </div>
-                        <p className="gif mb-5 text-white text-4xl md:text-6xl lg:text-xxl  xl:text-[4.9rem] font-bold z-10">Based in Germany</p>
+                        <p className="gif mb-5 text-white text-[35px] md:text-6xl lg:text-xxl  xl:text-[4.9rem] font-bold z-10">Based in Germany</p>
                         <button onClick={scrollToSection} className="bg-primary hover:opacity-60 text-white font-work-sans font-[400] text-sm px-6 tracking-wide w-fit py-3 rounded-full">View selected work</button>
                     </div>
                     {/* image */}
