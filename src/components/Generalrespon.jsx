@@ -18,12 +18,12 @@ const Generalrespon = () => {
             </div>
             <div className="flex flex-col mb-8 xl:flex-row items-center justify-between">
                 <div className="mb-8 xl:mb-0 xl:w-[65%]">
-                    <h4 className="font-500 text-[13px] mb-4">01</h4>
+                    <h4 className="font-500 text-xs mb-4">01</h4>
                     <h4 className="font-bold mb-4 text-3xl text-hueblack">Gaining Context</h4>
                     <p className="text-sm xl:w-[80%] font-[400] text-secondary font-work-sans">I started off the vision next project by first exploring the market research done for the project and then setting up 1:1 calls with the product owner and my co designer to get better clarity on the problem space and intended solution.</p>
                 </div>
                 <div className="xl:w-[31%]">
-                    <h4 className="font-500 text-[13px] mb-4">02</h4>
+                    <h4 className="font-500 text-xs mb-4">02</h4>
                     <h4 className="font-bold mb-4 text-3xl text-hueblack">Interfacing with team</h4>
                     <p className="text-sm font-[400] text-secondary font-work-sans ">Because I joined the team at the discovery phase, the next step was to set up our team call to define our business model Canva, value proposition, and backlog of jobs to be done.</p>
                 </div>
