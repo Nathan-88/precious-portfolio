@@ -16,7 +16,7 @@ function WhiteCollarLayout() {
         <main className="flex-1">
             <Outlet /> {/* This is where the child routes will be rendered */}
         </main>
-        <ProjectFooter link="/projects/procurement" text="Go Back" img1={procurem} img2={footerproc}/>
+        <ProjectFooter link="/projects/procurement" text="Next project" img1={procurem} img2={footerproc}/>
       </div>
   );
 }

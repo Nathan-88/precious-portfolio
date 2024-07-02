@@ -16,7 +16,7 @@ function BixLayout() {
         <main className="flex-1">
             <Outlet /> {/* This is where the child routes will be rendered */}
         </main>
-        <ProjectFooter link="/projects/WhiteCollar" text="Next Case Study" img1={whitecol} img2={uns}/>
+        <ProjectFooter link="/projects/WhiteCollar" text="Go Back" img1={whitecol} img2={uns}/>
       </div>
   );
 }

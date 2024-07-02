@@ -7,10 +7,9 @@ import { Link } from "react-router-dom"
 const contents = [
     {link: "projects/WhiteCollar", img: whitecard, date: "JULY 2020", h: "White Collar", text: "A job search digital solution built to connect job seekers to serious recruiters in simple steps"},
     {link: "projects/procurement", img: Procur, date: "AUGUST 2022", h: "Procurement", text: "Enterprise spend management solution that helps business optimise their purchasing spend and sourcing needs"},
-    {link: "https://www.bix-digital.com/", img: bixx, date: "FEB 2024", h: "Boehringer Ingelheim X", text: "An overview of my time and project so far working at BI X"},
+    {link: "projects/bix", img: bixx, date: "FEB 2024", h: "Boehringer Ingelheim X", text: "An overview of my time and project so far working at BI X"},
 ]
 const Mywork = () => {
-    
     return(
         <section id="work" className="p-6 md:py-16 bg-white h-auto">
             <h2 className="text-primary font-bold text-center text-[20px] leading-[17.2px] font-[Poppins]">SELECTED WORK</h2>

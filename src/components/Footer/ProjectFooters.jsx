@@ -5,7 +5,7 @@ const ProjectFooter = ({link, img1, text, img2}) => {
     return(
         <section className="bg-black pt-12 md:pt-12 h-auto">
             <div className="flex flex-col justify-center items-center  px-8 md:px-16 xl:px-24">
-                <Link to={link}><button className="mb-16 border text-white border-whitecard py-2 px-4 font-work-sans font-[400] text-xs rounded-full hover:border-green-600">{text}</button></Link>
+                <Link to={link}><button className="mb-16 border text-white border-whitecard py-3 px-4 font-work-sans font-[400] text-xs rounded-full hover:border-green-600">{text}</button></Link>
 
                 <img src={img1} className="mb-16"/>
 
