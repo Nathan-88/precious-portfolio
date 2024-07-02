@@ -22,7 +22,7 @@ const Learning = () => {
                 <div className="text-hueblack mb-8 xl:mb-0 xl:w-[55%]">
                     <p className="mb-2 font-[500] text-[13px]">02</p>
                     <h4 className="mb-4 font-bold text-3xl">Keep everyone in the loop</h4>
-                    <p className="font-work-sans text-sm font-[400] w-[97%]">Working in a large company means many ongoing projects and siloed teams. I had to make an effort to get to know cross functional teams and ongoing projects. I also had to learn to be very vocal about the work I was doing to ensure everyone has an understanding of my work and proposed changes. I also had to learn to facilitate team feedback sessions, and learnt to be vocal but in small and large teams as required and this is an area, I keep working on everyday</p>
+                    <p className="font-work-sans text-sm font-[400] w-[97%]">Working in a large company means many ongoing projects and siloed teams. I had to make an effort to get to know cross functional teams and ongoing projects. I also had to learn to be very vocal about the work I was doing to ensure everyone has an understanding of my work and proposed changes. I also had to learn to facilitate team feedback sessions, and learnt to be vocal both in small and large teams as required and this is an area, I keep working on everyday</p>
                 </div>
                 <div className="xl:w-[31%] text-hueblack">
                     <p className="mb-2 font-[500] text-[13px]">03</p>
