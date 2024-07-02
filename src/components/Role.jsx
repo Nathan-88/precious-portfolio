@@ -1,7 +1,7 @@
 import RoleImg from '../../src/assets/cuate.svg'
 const Role = () => {
     return(
-        <section className="h-auto px-10 xl:px-20  w-full flex flex-col items-center xl:flex-row gap-x-10 xl:justify-between">
+        <section className="h-auto px-10 xl:px-16  w-full flex flex-col items-center xl:flex-row gap-x-10 xl:justify-between">
                 <div className="text-white md:mx-10 xl:m-0 xl:w-2/5">
                     <h3 className="font-bold text-4xl py-5">My Role</h3>
                     <p className="text-sm pb-2 font-[400] font-work-sans xl:pb-5">
