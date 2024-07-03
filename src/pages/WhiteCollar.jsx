@@ -9,10 +9,10 @@ import Takeaway from "../components/Takeaway"
 import TeamProject from "../components/TeamProject"
 
 const WhiteItems =[
-    {link: "#", name: "User research"},
-    {link: "#", name: "UI design"},
-    {link: "#", name: "Ux design"},
-    {link: "#", name: "Prototyping"}
+    {link: "#user", name: "User research"},
+    {link: "#ui", name: "UI design"},
+    {link: "#learning", name: "Learnings"},
+    {link: "#prototype", name: "Prototyping"}
 ]
 
 
@@ -35,10 +35,10 @@ const WhiteCollar = () => {
                     <div className="flex flex-wrap justify-center xl:justify-start xl:w-[65%] font-work-sans text-text mb-8">
                         {WhiteItems.map((item, index) => (
                         <div key={index} className="border mb-4 mr-4 border-current py-2 px-4 xl:p-3 rounded-full">
-                            <a href={item.link} className="p-2">{item.name}</a>
+                            <a href={item.link} className="p-2 font-work-sans text-sm">{item.name}</a>
                         </div>))}
                     </div>
-                    <div className=" xl:w-[50%]">
+                    <div className=" xl:w-[53%]">
                         <p className="text-justifyxl:text-center text-[#FFFFFF] text-sm font-[400] font-work-sans">
                             As part of my Internship with Stutern Accelerator, I was given the opportunity to work collaboratively on a digital application that connects job seekers to available jobs in simple steps; search, find and apply...
                         </p>
@@ -50,13 +50,20 @@ const WhiteCollar = () => {
                 </div>
             </div>
             {/* team project */}
-            <TeamProject/>
+            <div id="user">
+                <TeamProject/>
+            </div>
+            
+            <div id="prototype">
             <GoalsProposed/>
+            </div>
             {/* competitor analysis */}
             <Competitor/>
             <Pict/>
             <EasyNaigate/>
+            <div id="learning">
             <Takeaway/>
+            </div>
         </section>
     )
 }

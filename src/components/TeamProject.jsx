@@ -1,8 +1,8 @@
 const TeamProject =() => {
     return(
-    <section className="px-4 md:px-16 xl:px-32 py-16">
+    <section  className="px-4 md:px-16 xl:px-32 py-16">
         <div className="grid gap-4 grid-cols-2 xl:grid-cols-3">
-            <div className="font-work-sans">
+            <div  className="font-work-sans">
                 <h3 className="text-3xl font-bold mb-4 font-Helvetica-Neue">Team</h3>
                 <p className="text-hueblack font-semibold">UX DESIGNERS</p>
                 <p className="text-hueblack">Oguazu Precious</p>

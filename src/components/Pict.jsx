@@ -78,7 +78,7 @@ const Pict = () => {
                 </div>
             </div>
 
-            <div className="xl:px-16 py-4">
+            <div id="ui" className="xl:px-16 py-4">
                 <img src={group} className="" alt="phones"/>
             </div>
         </section>

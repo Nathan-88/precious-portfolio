@@ -39,7 +39,7 @@ const GoalsProposed = () => {
                         <img src={career} alt="career"/>
                         <p className="">Easy navigation</p>
                     </div>
-                    <button className="rounded-full px-4 py-2 bg-primary text-white w-fit">See prototype</button>
+                    <button className="rounded-full px-4 py-2 hover:opacity-60 bg-primary text-white w-fit"><a target="_blank" href="https://www.figma.com/proto/X8SGbF8xUV6nTUMhSywsqt/White-collar?page-id=81%3A127&node-id=114-695&viewport=297%2C323%2C0.23&t=SUDhrrpi4PpRFeET-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=114%3A695">See prototype</a></button>
                 </div>
             </div>
         </div>
