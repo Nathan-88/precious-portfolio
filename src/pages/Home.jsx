@@ -23,7 +23,7 @@ const Home = () => {
         <section
         className="md:h-screen relative bg-center text-white bg-fixed bg-no-repeat bg-cover parallex overflow-hidden">
             {/* absolute top-[30%] 2xl:top-[50%] text-white w-full left-[45%] md:left-[50%] 2xl:left-[55%] -translate-y-[50%] -translate-x-[40%] */}
-            <div className="pl-[8%] md:pl-[15%]  flex flex-col justify-center ">
+            <div className="pl-[8%] md:pl-[15%] flex flex-col justify-center ">
                     {/* text container */}
                     <div className="justify-center h-screen lg:pl-4 flex flex-col text-3xl ">
                         <div className="flex items-center">

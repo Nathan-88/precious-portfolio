@@ -18,7 +18,7 @@ const Learning = () => {
                     <p className="font-work-sans text-sm font-[400]">With Klaxoon, details of individual work is kept transparent and for me, it makes it easier to refer back to the research done, changes made and why, and pending questions. This makes the process all the more exciting and collaborative</p>
                 </div>
             </div>
-            <div className="flex flex-col xl:flex-row justify-between mb-8 items-center">
+            <div className="flex flex-col xl:flex-row justify-between mb-8 items-center xl:items-start">
                 <div className="text-hueblack mb-8 xl:mb-0 xl:w-[55%]">
                     <p className="mb-2 font-[500] text-[13px]">02</p>
                     <h4 className="mb-4 font-bold text-3xl">Keep everyone in the loop</h4>
@@ -30,7 +30,7 @@ const Learning = () => {
                     <p className="font-work-sans text-sm font-[400]">Working on Vision Next helped me strengthen the need for every feature on a product to have a purpose, you don’t add details or feature that doesn’t support the end goal or is not validated with real user/expert insight</p>
                 </div>
             </div>
-            <div className="flex flex-col xl:flex-row justify-between mb-8 items-center">
+            <div className="flex flex-col xl:flex-row justify-between mb-8 items-center xl:items-start">
                 <div className="text-hueblack mb-8 xl:mb-0 xl:w-[55%]">
                     <p className="mb-2 font-[500] text-[13px]">04</p>
                     <h4 className="mb-4 font-bold text-3xl">Inter-cultural competence & Effective communication</h4>

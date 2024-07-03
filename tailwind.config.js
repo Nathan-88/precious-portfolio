@@ -14,6 +14,7 @@ export default {
         sidebar : "#525252",
         text: "#7A7A7A",
         accent: "#61CE70",
+        goal: "#202020",
         eucalyptus: "#23A455",
         tertiary: "#F1F1F1",
         whitecard: "#F5F5F5",
@@ -25,7 +26,8 @@ export default {
       fontFamily: {
         'work-sans': ['"Work Sans"', 'sans-serif'],
         'roboto': ["Roboto", 'sans-serif'],
-        'Helvetica-Neue': ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif']
+        'Helvetica-Neue': ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+        'open-sans': ['"Open Sans"', 'sans-serif'],
       },
       fontSize: {
         xs: ['13px', '14.8px'],
@@ -35,6 +37,7 @@ export default {
         xl: ['20px', '28px'],
         '2xl': ['24px', '32px'],
         '3xl': ['28px', '31.4px'],
+        '3xxl': ['30px', '21.16px'],
         '4xl': ['38px', '46.8px'],
         xxl: ['80px', '88px'],
 
