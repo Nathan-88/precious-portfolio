@@ -13,7 +13,7 @@ const UniqueSelling = () => {
                         <li>Purchase order: Where procurement officers can manage requests</li>
                         <li>Quotations: Where procurement officers can manage quotes with vendors</li>
                         <li>Invoicing: Where procurement officers can manage invoices with vendors</li>
-                        <li>Vendor Portal: Where procurement officers can manage invoices with vendors</li>
+                        <li>Vendor Portal: Where vendors can manage their buyers and request</li>
                         <li>Others: Receiving & returning, Budgeting, vendor management, inventory, configuration</li>
                     </ul>
                 </div>
