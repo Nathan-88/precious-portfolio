@@ -1,5 +1,23 @@
 import { motion } from "framer-motion";
+import samplePDF from '../assets/precious_resume.pdf';
+import { Link } from "react-router-dom";
+import { useEffect, useState} from "react";
+
 const About = ()=> {
+    const [isXL, setIsXL] = useState(false);
+
+    useEffect(() => {
+        const checkScreenSize = () => {
+            setIsXL(window.innerWidth >= 1280); // 1280px is the breakpoint for xl screens in Tailwind CSS
+        };
+
+        checkScreenSize(); // Check initial screen size
+        window.addEventListener('resize', checkScreenSize);
+
+        return () => {
+            window.removeEventListener('resize', checkScreenSize);
+        };
+    }, []);
     return (
         <motion.section 
             initial={{ opacity: 0, scale: 0.8 }}
@@ -25,7 +43,15 @@ const About = ()=> {
                     <h2 className="text-marino font-medium tracking-wide text-xs">CONTACT</h2>
                     <div className=" font-[400] text-[16px] font-open-sans leading-[19.2px]">
                         <a href="mailto:Oguazuprecious@gmail.com"><p className="text-black mb-3">oguazuprecious@gmail.com</p></a>
-                        <p className="text-black mb-3">Download Resume</p>
+                        {isXL ? (
+                            <Link to="/pdf">
+                                <p className="text-black mb-3">Download Resume</p>
+                            </Link>
+                        ) : (
+                            <a target="_blank" href='precious_resume.pdf' download>
+                                <p className="text-black mb-3">Download Resume</p>
+                            </a>
+                        )}
                         <a target="_blank" href="https://www.linkedin.com/in/precious-oguazu"><p className="text-black mb-2">Find me on Linkedin</p></a>
                     </div>
                 </div>

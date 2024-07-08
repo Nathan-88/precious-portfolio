@@ -9,6 +9,9 @@ import WhiteCollarLayout from "../layouts/WhiteCollarLayout";
 import WhiteCollar from "../pages/WhiteCollar";
 import BixLayout from "../layouts/BixLayout";
 import Bix from "../pages/Bix";
+import PdfLayout from "../layouts/PdfLayout";
+import Pdf from "../pages/Pdf";
+
 
 const Router = () =>{
     const router = createBrowserRouter(
@@ -20,6 +23,9 @@ const Router = () =>{
             </Route>
             <Route path="about" element={<AboutLayout/>}>
                 <Route index element={<About/>}/>
+            </Route>
+            <Route path="pdf" element={<PdfLayout/>}>
+                <Route index element={<Pdf/>}/>
             </Route>
             <Route path="projects" element={<ProcurementLayout/>}>
                 <Route index path="procurement" element={<Procurement/>}/>
