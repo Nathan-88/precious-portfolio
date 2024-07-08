@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import insta from "../../assets/insta.png"
 import beh from "../../assets/behance (2).png"
 import lin from "../../assets/linkedin.png"
@@ -6,7 +5,7 @@ import lin from "../../assets/linkedin.png"
 
 const Footer = () => {
     return(
-    <section className=" bg-black  h-auto  xl:w-[80%] z-10">
+    <section className=" bg-black  h-auto  xl:w-[80%] min-[1440px]:w-full z-10">
         <div className="py-10 md:py-16 xl:py-28 gap-10 flex flex-col xl:flex-row justify-center items-center">
             <div className="px-6 xl:px-0">
                 <p className="text-primary font-medium text-sm mb-6">CONTACT ME</p>

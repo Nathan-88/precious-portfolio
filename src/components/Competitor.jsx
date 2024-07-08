@@ -16,21 +16,21 @@ const Competitor =() => {
                 <h3 className="text-3xl font-bold text-hueblack">Clearly defining problem statements for our different levels of end-users and their needs.</h3>
                 <p className="font-[400] text-text font-work-sans">we created two well-defined user personas which were created initially from hypothesis to guide the interview script but were then modified using user insights from the interview.</p>
             </div>
-            <div className="xl:px-16 py-16 grid grid-cols-1 gap-x-6 xl:grid-cols-2">
-                <div className="mb-10 xl:mb-0 flex flex-col justify-between items-center">
+            <div className="xl:px-16 py-16 grid grid-cols-1 font-work-sans gap-x-6 xl:grid-cols-2">
+                <div className="mb-10 xl:mb-0 flex flex-col items-center">
                     <div className="">
                         <img src={pic_O} alt="dp"/>
                     </div>
-                    <div className="mt-16 p-6 bg-whitecard">
+                    <div className="mt-16 p-6 xl:h-[217px] bg-whitecard">
                         <p className="font-[400] font-work-sans">A fresh graduate <span className="font-semibold">actively searching</span> for a new role in design after her boot camp. First time applying to jobs and <span className="font-semibold">worried about getting overwhelmed. Struggles with keeping track of multiple applications. Needs job listing solutions that are easy and learnable,</span>is  also worries about creating a professional resume and <span className="font-semibold">requires easy-apply solutions</span></p>
                     </div>
                 </div>
-                <div className="flex flex-col justify-between items-center">
+                <div className="flex flex-col items-center">
                     <div className="">
                         <img src={pic_oo} alt="dp"/>
                     </div>
-                    <div className="mt-16 p-6 bg-whitecard">
-                        <p className="">An employee in a reputable company, well qualified and happy with his position but is <span className="font-semibold">passively searching</span> for new roles in more promising companies. He has a tendency to miss what is not scheduled on his calendar and <span className="font-semibold">needs</span> to be able to set reminders about upcoming interviews & <span className="font-semibold">compare jobs.</span> His goal is to <span className="font-semibold">manage his time properly and apply only to serious recruiters</span></p>
+                    <div className="mt-16 p-6 xl:h-[217px] bg-whitecard">
+                        <p className="font-[400]">An employee in a reputable company, well qualified and happy with his position but is <span className="font-semibold">passively searching</span> for new roles in more promising companies. He has a tendency to miss what is not scheduled on his calendar and <span className="font-semibold">needs</span> to be able to <span className="font-semibold">set reminders</span> about upcoming interviews & <span className="font-semibold">compare jobs.</span> His <span className="font-semibold">goal </span>is to <span className="font-semibold">manage his time properly and apply only to serious recruiters</span></p>
                     </div>
                 </div>
             </div>

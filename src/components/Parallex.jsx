@@ -40,7 +40,7 @@ const Parallex = () => {
                     </div>
                 </div>
             </div>
-            <div className="hidden xl:block w-[42%] bg-black fixed bottom-0 -z-[3] right-0">
+            <div className="hidden xl:block w-[42%] bg-black fixed bottom-0 -z-[3] right-0 min-[1450px]:absolute">
                 <img src={picfix} className="" alt="my pic"/>
             </div>
         </section>
