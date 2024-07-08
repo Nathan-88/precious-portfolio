@@ -2,8 +2,8 @@ import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from '../components/Header/Header';
 import ProjectFooter from '../components/Footer/ProjectFooters';
-import procurem from "../assets/PROCUREMENT.png"
-import footerproc from "../assets/footerprocur.png"
+import bix from "../assets/BI X.png"
+import uns from "../assets/Bixfooter.png"
 
 function WhiteCollarLayout() {
   useEffect(() => {
@@ -16,7 +16,7 @@ function WhiteCollarLayout() {
         <main className="flex-1">
             <Outlet /> {/* This is where the child routes will be rendered */}
         </main>
-        <ProjectFooter link="/projects/procurement" text="Next project" img1={procurem} img2={footerproc}/>
+        <ProjectFooter link="/projects/bix" text="Go Back" img1={bix} img2={uns}/>
       </div>
   );
 }

@@ -2,8 +2,9 @@ import { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from '../components/Header/Header';
 import ProjectFooter from '../components/Footer/ProjectFooters';
-import bix from "../assets/BI X.png"
-import uns from "../assets/Bixfooter.png"
+import whitecol from "../assets/White Collar.png"
+import uns from "../assets/unsplash_zNRITe8NPqY (1).png"
+
 
 function ProcurementLayout() {
   useEffect(() => {
@@ -16,7 +17,7 @@ function ProcurementLayout() {
         <main className="flex-1">
             <Outlet /> {/* This is where the child routes will be rendered */}
         </main>
-        <ProjectFooter link="/projects/bix" text="Next project" img1={bix} img2={uns}/>
+        <ProjectFooter link="/projects/WhiteCollar" text="Next project" img1={whitecol} img2={uns}/>
       </div>
   );
 }
