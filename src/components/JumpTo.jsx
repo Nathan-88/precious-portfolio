@@ -14,9 +14,9 @@ const JumpTo = () => {
                 <h2 id="Overview" className="text-4xl font-bold">Jump To</h2>
                 <div className="flex flex-wrap space-x-2">
                     {Items.map((item, index) => (
-                    <div key={index} className="border font-[400] font-work-sans hover:bg-primary hover:text-white border-current text-sm py-2 px-4 mb-2 rounded-full">
-                        <a href={item.link} className="">{item.name}</a>
-                    </div>))}
+                    <a href={item.link}><div key={index} className="border font-[400] font-work-sans hover:bg-primary hover:text-white border-current text-sm py-2 px-4 mb-2 rounded-full">
+                        {item.name}
+                    </div></a>))}
                 </div>
                 <hr className="border-current"/>
             </div>

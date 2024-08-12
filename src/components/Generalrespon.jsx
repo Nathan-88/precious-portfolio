@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 import whiteman from "../assets/whiteman.png"
 const Generalrespon = () => {
     return(
-        <section className="bg-white pt-12 pb-20 px-8 xl:px-20">
+        <section className="bg-white pt-12 pb-10 px-8 xl:px-20">
             <div className="w-full flex items-center justify-between">
                 <h3 className="font-bold text-3xl xl:text-4xl">General responsibilities</h3>
                 <p className="font-[400] tracking-widest text-[13px]">003</p>
@@ -43,13 +44,15 @@ const Generalrespon = () => {
             <div className="flex flex-col mb-8 items-center xl:items-start xl:flex-row justify-between">
                 <div className="mb-8 xl:mb-0 xl:w-[65%]">
                     <h4 className="font-500 text-[13px] mb-4">05</h4>
-                    <h4 className="font-bold mb-4 text-3xl text-hueblack">User research</h4>
-                    <p className="text-sm xl:w-[80%] font[400] text-secondary font-work-sans">Every projects in BI X is research led and heavy and this project is no exception. For the discovery phase, we focused on understanding the vet workflow, test our concept with users and market research. The user research was planned and conducted by myself and the co-designer independently. Insights gathered was analysed on Dovetail collaboratively and the summary of the findings informed a lot of the next steps</p>
+                    <h4 className="font-bold mb-4 text-3xl text-hueblack">Supporting other teams & projects</h4>
+                    <p className="text-sm xl:w-[80%] font[400] text-secondary font-work-sans">Asides my core project, I still get the opportunity to support my team mates on other things that contributed to the overall goal of the UX community and company. I supported the research team to design the Re-ops In-site page that serves as the one source of truth for all things research.</p>
                 </div>
                 <div className="xl:w-[31%]">
                     <h4 className="font-500 text-[13px] mb-4">06</h4>
-                    <h4 className="font-bold mb-4 text-3xl text-hueblack">Supporting other teams & projects</h4>
-                    <p className=" text-sm font[400] text-secondary font-work-sans ">Asides my core project, I still get the opportunity to support my team mates on other things that contributed to the overall goal of the UX community and company. I supported the research team to design the Re-ops In-site page that serves as the one source of truth for all things research. </p>
+                    <h4 className="font-bold mb-4 text-3xl text-hueblack">User research</h4>
+                    <p className="mb-10 text-sm font[400] text-secondary font-work-sans ">Every projects in BI X is research led and heavy and this project is no exception. For the discovery phase, we focused on understanding the vet workflow, test our concept with users and market research. </p>
+
+                    <Link to="/projects/bixsub"><div className="rounded-full w-fit py-2 hover:border-primary px-6 font-work-sans font-normal text-xs border">View more details</div></Link>
                 </div>
             </div>
         </section>

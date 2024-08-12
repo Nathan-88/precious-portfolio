@@ -11,6 +11,8 @@ import BixLayout from "../layouts/BixLayout";
 import Bix from "../pages/Bix";
 import PdfLayout from "../layouts/PdfLayout";
 import Pdf from "../pages/Pdf";
+import BixsubLayout from "../layouts/BixsubLayout";
+import Bixsub from "../pages/Bixsub";
 
 
 const Router = () =>{
@@ -35,6 +37,9 @@ const Router = () =>{
             </Route>
             <Route path="projects" element={<BixLayout/>}>
                 <Route path="bix" element={<Bix/>}/>
+            </Route>
+            <Route path="projects" element={<BixsubLayout/>}>
+                <Route path="bixsub" index element={<Bixsub/>}/>
             </Route>
             </>
         )
