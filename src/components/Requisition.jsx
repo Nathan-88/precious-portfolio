@@ -172,7 +172,7 @@ const Requisition = () => {
                         </div>
                         <div className=" space-y-6">
                             <h3 className="text-center font-bold text-xl">Add item from catalogue</h3>
-                            <img src={img} className="xl:h-[296.36px]" alt="image"/>
+                            <img src={img} className="" alt="image"/>
                         </div>
                     </div>
                 </div>
