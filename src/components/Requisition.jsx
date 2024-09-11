@@ -153,7 +153,7 @@ const Requisition = () => {
             <div className="mb-16 xl:mb-24 bg-white pt-16 h-auto">
                 {pr1.map((pr, index)=>(
                     <div key={index} className=" px-8 mb-10 items-center xl:items-start flex flex-col xl:flex-row xl:justify-around">
-                        <div className="xl:w-1/2 mb-6">
+                        <div className=" mb-6">
                             <img src={pr.img} alt="frame" />
                         </div>
                         <div className="xl:w-[22%] font-work-sans font-[400] text-sm">
@@ -168,17 +168,17 @@ const Requisition = () => {
                     <div className="bg-[#F6F6F6] rounded-lg grid grid-cols-1 px-8 pt-8 gap-4 md:grid-cols-2">
                         <div className=" mb-8 md:mb-0 space-y-6">
                             <h3 className="text-center font-bold text-xl">Add item</h3>
-                            <img src={img1} className="h-[303px]" alt="image"/>
+                            <img src={img1} className="xl:h-[296.36px] w-[322.6px]" alt="image"/>
                         </div>
                         <div className=" space-y-6">
                             <h3 className="text-center font-bold text-xl">Add item from catalogue</h3>
-                            <img src={img} className="h-[303px]" alt="image"/>
+                            <img src={img} className="xl:h-[296.36px]" alt="image"/>
                         </div>
                     </div>
                 </div>
                 {pr2.map((pr, index)=>(
                     <div key={index} className=" px-8 mb-10 items-center xl:items-start flex flex-col xl:flex-row xl:justify-around">
-                        <div className="xl:w-1/2 mb-6">
+                        <div className="mb-6">
                             <img src={pr.img} alt="frame" />
                         </div>
                         <div className="xl:w-[29%] font-work-sans font-[400] text-sm">
@@ -198,7 +198,7 @@ const Requisition = () => {
             <div className="mb-16 xl:mb-24 bg-white pt-16 h-auto">
                 {pr3.map((pr, index)=>(
                     <div key={index} className=" px-8 mb-10 items-center xl:items-start flex flex-col xl:flex-row xl:justify-around">
-                        <div className="xl:w-1/2 mb-6">
+                        <div className="mb-6">
                             <img src={pr.img} alt="frame" />
                         </div>
                         <div className="xl:w-[35%] font-work-sans font-[400] text-sm">
@@ -217,7 +217,7 @@ const Requisition = () => {
             <div className="mb-16 xl:mb-24 bg-white pt-16 h-auto">
                 {pr4.map((pr, index)=>(
                     <div key={index} className=" px-8 mb-10 items-center xl:items-start flex flex-col xl:flex-row xl:justify-around">
-                        <div className="xl:w-1/2 mb-6">
+                        <div className="mb-6">
                             <img src={pr.img} alt="frame" />
                         </div>
                         <div className="xl:w-[35%] font-work-sans font-[400] text-sm">
@@ -236,7 +236,7 @@ const Requisition = () => {
             <div className="mb-16 xl:mb-24 bg-white pt-16 h-auto">
                 {pr5.map((pr, index)=>(
                     <div key={index} className=" px-8 mb-10 items-center xl:items-start flex flex-col xl:flex-row xl:justify-around">
-                        <div className="xl:w-1/2 mb-6">
+                        <div className=" mb-6">
                             <img src={pr.img} alt="frame" />
                         </div>
                         <div className="xl:w-[29%] font-work-sans font-[400] text-sm">
@@ -255,7 +255,7 @@ const Requisition = () => {
             <div className="bg-white pt-16 h-auto">
                 {pr6.map((pr, index)=>(
                     <div key={index} className=" px-8 mb-10 items-center xl:items-start flex flex-col xl:flex-row xl:justify-around">
-                        <div className="xl:w-1/2 mb-6">
+                        <div className=" mb-6">
                             <img src={pr.img} alt="frame" />
                         </div>
                         <div className="xl:w-[29%] font-work-sans font-[400] text-sm">
@@ -269,7 +269,7 @@ const Requisition = () => {
                 <h3 className="px-8 xl:px-24 mb-8 font-bold text-3xl">Approval workflow</h3>
                 {pr7.map((pr, index)=>(
                     <div key={index} className=" px-8 items-center xl:items-start flex flex-col xl:flex-row xl:justify-around">
-                        <div className="xl:w-1/2 mb-6">
+                        <div className=" mb-6">
                             <img src={pr.img} alt="frame" />
                         </div>
                         <div className="xl:w-[29%] font-work-sans font-[400] text-sm">

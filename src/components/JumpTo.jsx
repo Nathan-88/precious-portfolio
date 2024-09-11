@@ -22,7 +22,7 @@ const JumpTo = () => {
             </div>
 
             <section className="pt-10">
-                <h2 className="text-4xl font-bold mb-10">Project Overview</h2>
+                <h2 className="text-4xl font-bold mb-10 xl:mb-16">Project Overview</h2>
                 <div className="flex gap-4 flex-col xl:flex-row justify-center items-center">
                     <div className="py-2 space-y-4 xl:w-1/2">
                         <div className="space-y-2">
@@ -42,7 +42,7 @@ const JumpTo = () => {
                         <img src={MacBook} alt="Macbook" className=""/>
                     </div>
                 </div>
-                <div className=" bg-primary py-3 mt-8 px-4  xl:w-fit rounded-full text-center">
+                <div className=" bg-primary py-3 mt-6 px-8  xl:w-fit rounded-full text-center">
                     <a target="_blank" href="https://SeamlessHR.com" className="text-white">Go to SeamlessHR.com</a>
                 </div>
             </section>

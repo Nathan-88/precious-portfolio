@@ -19,7 +19,7 @@ const EasyNaigate = () => {
         <section className="bg-tertiary px-8 py-12 md:px-16 xl:px-24 md:py-20 h-auto">
             {files.map((file, index) => (
                 <div key={index} className="flex flex-col xl:flex-row xl:justify-between">
-                    <div className="xl:w-1/2 mb-6">
+                    <div className=" mb-6">
                         <img src={file.image} alt="frame" />
                     </div>
                     <div className="mb-10 space-y-6 xl:w-2/6">

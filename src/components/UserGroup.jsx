@@ -165,8 +165,8 @@ const UserGroup = () => {
 
             <section className="bg-white md:px-8 space-y-10 py-12 md:py-20 h-auto">
                 <h2 className="xl:w-[80%] font-bold underline text-4xl">Main Breakdown Flow For Procurement Users</h2>
-                <img src={Imgflow} alt="User Flow" className="hidden xl:block w-full object-cover"/>
-                <img src={Imgmobile} alt="User Flow" className="xl:hidden w-full object-cover"/>
+                <img src={Imgflow} alt="User Flow" className="hidden lg:block w-full object-cover"/>
+                <img src={Imgmobile} alt="User Flow" className="lg:hidden w-full object-cover"/>
             </section>
         </section>
     )
