@@ -274,8 +274,8 @@ const Requisition = () => {
                         />
                         {/* Zoom Controls */}
                         <div className="controls">
-                            <button className="hover:bg-text hover:text-white px-4 py-2 font-bold font-work-sans rounded-full text-sm" onClick={zoomIn}>Zoom In</button>
-                            <button className="hover:bg-primary hover:text-white px-4 py-2 font-bold font-work-sans rounded-full text-sm" onClick={zoomOut}>Zoom Out</button>
+                            <button className="hover:bg-white bg-primary hover:text-primary text-white px-4 py-2 font-bold font-work-sans rounded-full text-md" onClick={zoomIn}>Zoom In</button>
+                            <button className="hover:bg-white bg-primary hover:text-primary text-white px-4 py-2 font-bold font-work-sans rounded-full text-md" onClick={zoomOut}>Zoom Out</button>
                         </div>
                     </div>
                 </div>
