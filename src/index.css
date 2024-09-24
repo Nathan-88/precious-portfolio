@@ -96,6 +96,10 @@ button {
   cursor: pointer;
 }
 
+svg {
+    transform: none;
+}
+
 .line{
    width: 100%; 
    text-align: center; 

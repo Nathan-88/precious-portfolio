@@ -1,17 +1,17 @@
 import React, { useState, useRef} from "react"
 import purchase from "../assets/requisiiiii.svg"
 import product from "../assets/Filled product requisition- Send for approval.svg"
-import img1 from "../assets/Imagepic1.png"
-import img from "../assets/Imagepic.png"
-import img3 from "../assets/Image.png"
+import img1 from "../assets/Add item.png"
+import img from "../assets/Catalogue.png"
+import img3 from "../assets/req.svg"
 import img4 from "../assets/Purchase requisition - single item.png"
-import request from "../assets/request.png"
+import request from "../assets/request.svg"
 import rf from "../assets/RFQ REPORT PAGE.png"
 import quotation from "../assets/Quotation received.png"
 import reqimg from "../assets/reqImage.png"
 import purchaseo from "../assets/Purchase order.png"
 import purimg from "../assets/PurchImage.png"
-import purreq from "../assets/Purchase requisition - single item - draft.png"
+import purreq from "../assets/req.svg"
 import venimg from "../assets/VenImage.png"
 import venimg2 from "../assets/VenImage (1).png"
 import venimg3 from "../assets/VenImage (2).png"
@@ -227,11 +227,12 @@ const Requisition = () => {
                     <div className="bg-[#F6F6F6] rounded-lg grid grid-cols-1 px-8 pt-8 gap-4 md:grid-cols-2">
                         <div className=" mb-8 md:mb-0 space-y-6">
                             <h3 className="text-center font-bold text-xl">Add item</h3>
-                            <img src={img1} className="xl:h-[296.36px] w-[322.6px]" alt="image"/>
+                            <img src={img1} className="xl:h-[296.36px] cursor-pointer  w-[322.6px]" alt="frame"
+                            onClick={() => handleImageClick(img1)}/>
                         </div>
                         <div className=" space-y-6">
                             <h3 className="text-center font-bold text-xl">Add item from catalogue</h3>
-                            <img src={img} className="" alt="image"/>
+                            <img src={img} onClick={() => handleImageClick(img)}  className="cursor-pointer" alt="image"/>
                         </div>
                     </div>
                 </div>
