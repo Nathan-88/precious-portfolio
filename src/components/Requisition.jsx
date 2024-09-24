@@ -1,5 +1,6 @@
-import purchase from "../assets/purchase.png"
-import product from "../assets/Filled product requisition- Send for approval.png"
+import React, { useState, useRef} from "react"
+import purchase from "../assets/requisiiiii.svg"
+import product from "../assets/Filled product requisition- Send for approval.svg"
 import img1 from "../assets/Imagepic1.png"
 import img from "../assets/Imagepic.png"
 import img3 from "../assets/Image.png"
@@ -144,6 +145,64 @@ const pr7 = [
 ]
 
 const Requisition = () => {
+    const [modalImage, setModalImage] = useState(null); 
+    const [zoomLevel, setZoomLevel] = useState(1); // Start with zoom level 1 (no zoom)
+    const [isDragging, setIsDragging] = useState(false);
+    const [position, setPosition] = useState({ x: 0, y: 0 });
+    const imgRef = useRef(null);
+    const dragStartPosition = useRef({ x: 0, y: 0 });
+    const currentTranslate = useRef({ x: 0, y: 0 });
+
+    // Open the modal with the selected image
+    const handleImageClick = (img) => {
+        setModalImage(img); // Set the clicked image to the state
+        setZoomLevel(1); // Reset zoom on new image
+        setPosition({ x: 0, y: 0 }); // Reset image position
+    };
+
+    // Function to close the modal when the background is clicked
+    const closeModal = () => {
+        setModalImage(null);
+        setZoomLevel(1); // Reset zoom when closing
+    };
+
+    // Zoom In
+    const zoomIn = () => {
+        setZoomLevel(prevZoomLevel => Math.min(prevZoomLevel + 0.2, 3)); // Limit zoom-in to 3x
+    };
+
+    // Zoom Out
+    const zoomOut = () => {
+        setZoomLevel(prevZoomLevel => Math.max(prevZoomLevel - 0.2, 0.5)); // Limit zoom-out to 0.5x
+    };
+
+     // Start dragging the image
+    const startDragging = (e) => {
+        setIsDragging(true);
+        dragStartPosition.current = { x: e.clientX, y: e.clientY };
+    };
+
+    // Handle dragging movement
+    const onDrag = (e) => {
+        if (isDragging) {
+            const deltaX = e.clientX - dragStartPosition.current.x;
+            const deltaY = e.clientY - dragStartPosition.current.y;
+
+            const newX = currentTranslate.current.x + deltaX;
+            const newY = currentTranslate.current.y + deltaY;
+
+            setPosition({ x: newX, y: newY });
+        }
+    };
+
+    // Stop dragging the image
+    const stopDragging = () => {
+        if (isDragging) {
+            currentTranslate.current = position; // Save the current position after dragging
+        }
+        setIsDragging(false);
+    };
+    
     return(
         <section className="bg-tertiary pt-12 md:px-16 md:pt-20 xl:px-24 h-auto">
             <div className="px-8 mb-6">
@@ -152,18 +211,18 @@ const Requisition = () => {
             </div>
             <div className="mb-16 xl:mb-24 bg-white pt-16 h-auto">
                 {pr1.map((pr, index)=>(
-                    <div key={index} className=" px-8 mb-10 items-center xl:items-start flex flex-col xl:flex-row xl:justify-around">
-                        <div className=" mb-6">
-                            <img src={pr.img} alt="frame" />
+                    <div key={index} className=" px-6 mb-10 items-center xl:items-start flex flex-col xl:flex-row xl:justify-around">
+                        <div className="mb-6">
+                            <img src={pr.img} className="cursor-pointer" alt="frame"
+                            onClick={() => handleImageClick(pr.img)} />
                         </div>
                         <div className="xl:w-[22%] font-work-sans font-[400] text-sm">
                             {pr.p.map((x, index)=>(
-                                <>{x}</>
+                                <React.Fragment key={index}>{x}</React.Fragment>
                             ))}
                         </div>
                     </div>
-                )
-                )}
+                ))}
                 <div className="xl:px-28 mb-10 ">
                     <div className="bg-[#F6F6F6] rounded-lg grid grid-cols-1 px-8 pt-8 gap-4 md:grid-cols-2">
                         <div className=" mb-8 md:mb-0 space-y-6">
@@ -179,17 +238,49 @@ const Requisition = () => {
                 {pr2.map((pr, index)=>(
                     <div key={index} className=" px-8 mb-10 items-center xl:items-start flex flex-col xl:flex-row xl:justify-around">
                         <div className="mb-6">
-                            <img src={pr.img} alt="frame" />
+                            <img src={pr.img} 
+                            alt="frame"
+                            className="cursor-pointer" 
+                            onClick={() => handleImageClick(pr.img)} />
                         </div>
                         <div className="xl:w-[29%] font-work-sans font-[400] text-sm">
                             {pr.p.map((x, index)=>(
-                                <>{x}</>
+                                <React.Fragment key={index}>{x}</React.Fragment>
                             ))}
                         </div>
                     </div>
                 )
                 )}
             </div>
+
+            {/*  */}
+
+            {modalImage && (
+                <div className="modal" onClick={closeModal}>
+                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                        <span className="close-modal" onClick={closeModal}>&times;</span>
+                        <img
+                            src={modalImage}
+                            ref={imgRef}
+                            alt="Zoomable"
+                            style={{
+                                transform: `translate(${position.x}px, ${position.y}px) scale(${zoomLevel})`,
+                                cursor: isDragging ? 'grabbing' : 'grab'
+                            }}
+                            onMouseDown={startDragging}
+                            onMouseMove={onDrag}
+                            onMouseUp={stopDragging}
+                            onMouseLeave={stopDragging}
+                        />
+                        {/* Zoom Controls */}
+                        <div className="controls">
+                            <button className="hover:bg-text hover:text-white px-4 py-2 font-bold font-work-sans rounded-full text-sm" onClick={zoomIn}>Zoom In</button>
+                            <button className="hover:bg-primary hover:text-white px-4 py-2 font-bold font-work-sans rounded-full text-sm" onClick={zoomOut}>Zoom Out</button>
+                        </div>
+                    </div>
+                </div>
+            )}
+
             <div className="px-8 mb-6">
                 <h3 className="text-marino mb-6 font-bold text-3xl">Request for quotation</h3>
                 <p className="font-work-sans font-[400] xl:w-[85%] text-sm mb-6">A request for quotation is a request to a supplier/ Vendor to provide an item or service and details at what price, time and terms the item can be provided. It is issued by a company to get comparative feedback on the different terms at which an item/ service can be provided. Due to global procurement standards it is a requirement to receive a minimum of 3 different quotations before making a purchase to ensure that a number of options have been viewed.</p>
@@ -199,11 +290,14 @@ const Requisition = () => {
                 {pr3.map((pr, index)=>(
                     <div key={index} className=" px-8 mb-10 items-center xl:items-start flex flex-col xl:flex-row xl:justify-around">
                         <div className="mb-6">
-                            <img src={pr.img} alt="frame" />
+                            <img src={pr.img} 
+                            alt="frame"
+                            className="cursor-pointer" 
+                            onClick={() => handleImageClick(pr.img)} />
                         </div>
                         <div className="xl:w-[35%] font-work-sans font-[400] text-sm">
                             {pr.p.map((x, index)=>(
-                                <>{x}</>
+                                <React.Fragment key={index}>{x}</React.Fragment>
                             ))}
                         </div>
                     </div>
@@ -218,11 +312,14 @@ const Requisition = () => {
                 {pr4.map((pr, index)=>(
                     <div key={index} className=" px-8 mb-10 items-center xl:items-start flex flex-col xl:flex-row xl:justify-around">
                         <div className="mb-6">
-                            <img src={pr.img} alt="frame" />
+                            <img src={pr.img} 
+                            alt="frame"
+                            className="cursor-pointer" 
+                            onClick={() => handleImageClick(pr.img)} />
                         </div>
                         <div className="xl:w-[35%] font-work-sans font-[400] text-sm">
                             {pr.p.map((x, index)=>(
-                                <>{x}</>
+                                <React.Fragment key={index}>{x}</React.Fragment>
                             ))}
                         </div>
                     </div>
@@ -237,11 +334,14 @@ const Requisition = () => {
                 {pr5.map((pr, index)=>(
                     <div key={index} className=" px-8 mb-10 items-center xl:items-start flex flex-col xl:flex-row xl:justify-around">
                         <div className=" mb-6">
-                            <img src={pr.img} alt="frame" />
+                            <img src={pr.img} 
+                            alt="frame"
+                            className="cursor-pointer" 
+                            onClick={() => handleImageClick(pr.img)}/>
                         </div>
                         <div className="xl:w-[29%] font-work-sans font-[400] text-sm">
                             {pr.p.map((x, index)=>(
-                                <>{x}</>
+                                <React.Fragment key={index}>{x}</React.Fragment>
                             ))}
                         </div>
                     </div>
@@ -256,11 +356,14 @@ const Requisition = () => {
                 {pr6.map((pr, index)=>(
                     <div key={index} className=" px-8 mb-10 items-center xl:items-start flex flex-col xl:flex-row xl:justify-around">
                         <div className=" mb-6">
-                            <img src={pr.img} alt="frame" />
+                            <img src={pr.img}
+                            alt="frame"
+                            className="cursor-pointer" 
+                            onClick={() => handleImageClick(pr.img)}/>
                         </div>
                         <div className="xl:w-[29%] font-work-sans font-[400] text-sm">
                             {pr.p.map((x, index)=>(
-                                <>{x}</>
+                                <React.Fragment key={index}>{x}</React.Fragment>
                             ))}
                         </div>
                     </div>
@@ -270,11 +373,14 @@ const Requisition = () => {
                 {pr7.map((pr, index)=>(
                     <div key={index} className=" px-8 items-center xl:items-start flex flex-col xl:flex-row xl:justify-around">
                         <div className=" mb-6">
-                            <img src={pr.img} alt="frame" />
+                            <img src={pr.img}
+                            alt="frame"
+                            className="cursor-pointer" 
+                            onClick={() => handleImageClick(pr.img)} />
                         </div>
                         <div className="xl:w-[29%] font-work-sans font-[400] text-sm">
                             {pr.p.map((x, index)=>(
-                                <>{x}</>
+                                <React.Fragment key={index}>{x}</React.Fragment>
                             ))}
                         </div>
                     </div>
