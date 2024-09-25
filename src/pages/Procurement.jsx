@@ -1,4 +1,4 @@
-import Procur from "../../src/assets/Group 5498.svg"
+import Procur from "../../src/assets/Dashboard First.svg"
 import Role from "../components/Role"
 import UniqueSelling from "../components/UniqueSelling"
 import UserGroup from "../components/UserGroup"
