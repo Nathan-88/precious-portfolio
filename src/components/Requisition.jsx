@@ -23,7 +23,7 @@ import c5 from "../assets/Configuration- Custom Approval Workflow.svg"
 import c6 from "../assets/Configuration- Custom Approval Workflow (1).svg"
 import c7 from "../assets/Configuration- Custom Approval Workflow (2).svg"
 import c8 from "../assets/Configuration- Custom Approval Workflow (3).svg"
-import c9 from "../assets/Configurations- Approval Workflow (1).svg"
+import c9 from "../assets/Configurations- Approval Workflow (2).svg"
 
 const pr1 = [
     {img: purchase, p:[

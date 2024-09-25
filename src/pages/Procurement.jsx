@@ -1,4 +1,4 @@
-import Procur from "../../src/assets/Procu-landing.png"
+import Procur from "../../src/assets/Group 5498.svg"
 import Role from "../components/Role"
 import UniqueSelling from "../components/UniqueSelling"
 import UserGroup from "../components/UserGroup"
