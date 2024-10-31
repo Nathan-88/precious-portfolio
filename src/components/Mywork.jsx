@@ -1,6 +1,6 @@
-import Procur from "../assets/Procurementcard.png"
-import whitecard from "../assets/whitecard.png"
-import bixx from "../assets/bixx.png"
+import Procur from "../assets/Procurementcard.svg"
+import whitecard from "../assets/whitecard.svg"
+import bixx from "../assets/bixx.svg"
 import arrow from "../assets/arrow.png"
 import { Link } from "react-router-dom"
 
