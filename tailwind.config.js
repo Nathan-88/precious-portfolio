@@ -25,6 +25,8 @@ export default {
       },
       fontFamily: {
         'work-sans': ['"Work Sans"', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif'],
+        'sigmar': ['Sigmar', 'sans-serif'],
         'roboto': ["Roboto", 'sans-serif'],
         'Helvetica-Neue': ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
         'open-sans': ['"Open Sans"', 'sans-serif'],
