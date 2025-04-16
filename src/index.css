@@ -19,7 +19,7 @@ body{
   font-family: "Helvetica Neue", Helvetica,system-ui, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   margin:0 auto;
   position: relative;
 }

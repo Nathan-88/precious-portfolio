@@ -13,6 +13,8 @@ import PdfLayout from "../layouts/PdfLayout";
 import Pdf from "../pages/Pdf";
 import BixsubLayout from "../layouts/BixsubLayout";
 import Bixsub from "../pages/Bixsub";
+import VisionnextLayout from "../layouts/VisionnextLayout";
+import Visionnext from "../pages/visionnext";
 
 
 const Router = () =>{
@@ -40,6 +42,9 @@ const Router = () =>{
             </Route>
             <Route path="projects" element={<BixsubLayout/>}>
                 <Route path="bixsub" index element={<Bixsub/>}/>
+            </Route>
+            <Route path="projects" element={<VisionnextLayout/>}>
+                <Route path="visionnext" element={<Visionnext/>}/>
             </Route>
             </>
         )
